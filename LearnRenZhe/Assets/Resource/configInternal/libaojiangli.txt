@@ -1,0 +1,6 @@
+﻿排列顺序	图标	物品品级	文字描述
+shuixu	icon	pinji	miaoshu
+1	jinbi1	4	金币三倍
+2	yinbi2	1	巨额银币
+3	shenqi3	4	亲热天堂
+4	chutian	4	女神雏田

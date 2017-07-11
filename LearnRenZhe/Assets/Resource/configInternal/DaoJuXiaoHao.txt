@@ -1,0 +1,4 @@
+﻿id号	标题	消耗物品id	消耗物品数量
+id	title	GoodsID	number
+1	LiaoTian	100010	1
+2	ChongZhu	11000012	1

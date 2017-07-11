@@ -4,23 +4,15 @@ using System.Collections.Generic;
 using System;
 public class WwwWorkpool : MonoBehaviour
 {
-
     public static WwwWorkpool instance = null;
-
-    private bool inited = false;
-
     public  int  maxCapcity = 2;
 
     private void Init()
     {
-      if(inited) return;
-
         for (int i = 0; i < maxCapcity; i++)
         {
             workItems.Add(new WwwWorkItem(""));
         }
-        inited = true;
-
     }
 
     private SecurityLinkList<workTarget> targets= new SecurityLinkList<workTarget>();
@@ -165,7 +157,6 @@ public class WwwWorkpool : MonoBehaviour
                         {
                             string url = links[wwwWorkItem].url;
                             System.Action<byte[]> callback = links[wwwWorkItem].successCallBack;
-
                             targets.AddLast(new workTarget(url, callback));
                         }
                     }

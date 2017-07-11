@@ -1,0 +1,12 @@
+﻿<root>
+	<chongzhi>http://www.google.com</chongzhi>
+	<guanwang>http://www.google.com</guanwang>
+	<luntan>http://www.google.com</luntan>
+	<zhuce>http://www.google.com</zhuce>
+	<mima>http://www.google.com</mima>
+	<URL_SWF>http://192.168.1.139:8080/game/</URL_SWF>
+	<officalInfo></officalInfo>
+	<userXy></userXy>
+	<chongZhiId>google</chongZhiId>
+	<vipQQ>888888888</vipQQ>
+</root>

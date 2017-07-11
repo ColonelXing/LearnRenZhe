@@ -13,44 +13,19 @@ using Debug = UnityEngine.Debug;
 
 public class ResourceLoader : MonoBehaviour
 { 
-    public bool ShouldCheckTheBattalAssert = false;
-    public bool openTheDubug = false;
-    public bool OutNet = true;
 
-    public int CanSkipNumberDaguanKa = 0;
-    public bool canSkipDaguanqia = false;
     [HideInInspector]
     public static string LocalPath = "";
-    public static ResourceLoader instance = null;
+    public static ResourceLoader Instance = null;
     private bool theResourceIsOK = false;
     private bool theResoureIsDowloading = false;
     public int targetFPS = 45;
-    private bool theResourceURLHadSet = false;
-    private string _resourcePrivatePath = "";
-
-    public bool isLenovo = false;
-    public bool isAnfan = false;
 
     [HideInInspector] 
     public   string ResourceURL{
 		get{
-		    if (this.theResourceURLHadSet)
-		    {
-		        return this._resourcePrivatePath;
-		    }
-		    else
-		    {
-                return OutNet ? "http://123.57.152.1:8080/CardgameConfig/" : "http://192.168.0.246:8080/";
-		    }  
+            return "http://123.57.152.1:8080/CardgameConfig/yijieconfig/";
 		}
-        set
-        {
-            if (!this.theResourceURLHadSet)
-            {
-                this.theResourceURLHadSet = true;
-                this._resourcePrivatePath = value;
-            }
-        }
     } 
 
     private const string ResourceListName = "sourceList.txt";
@@ -65,8 +40,8 @@ public class ResourceLoader : MonoBehaviour
     private long TotalBytesLength = 0;
     private int totalNumberNeedDowload = 0;
     private int currentNumberDowdlod = 0;
-    private Dictionary<string, ResourceObject> allResources = new Dictionary<string, ResourceObject>();
 
+    private Dictionary<string, ResourceObject> allResources = new Dictionary<string, ResourceObject>();
     private  Dictionary<string, ResourceObject> allResourcesLocal=new Dictionary<string, ResourceObject>();
 
     private SecurityQueue<SaveDataInfo> SaveQueue = new SecurityQueue<SaveDataInfo>();
@@ -105,13 +80,19 @@ public class ResourceLoader : MonoBehaviour
 
     }
 
-   public static  string loadingStr = "";
+   public static  string loadingStr = "----null";
 //    #undefine Debug1
     void Awake()
     {
         Application.targetFrameRate = targetFPS;
         ZipConstants.DefaultCodePage = 65001;
-        instance = this;
+        Instance = this;
+    }
+
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect(10, 20, 200, 30), loadingStr);
     }
 
     private Action callback = null;
@@ -126,56 +107,46 @@ public class ResourceLoader : MonoBehaviour
     {
         time = Time.realtimeSinceStartup;
         DowloadbBegain = 1;
-		Debug.LogError ("ResourceURL:"+ResourceURL+"; ResourceListName:"+ResourceListName);
-#if Debug
-        Debug_our.LogError(">>>>>>>>>>>" + ResourceURL + ResourceListName);
-#endif
         ResourceList = new WWW(ResourceURL + ResourceListName+GetTheSuffixOfURL());
+        Debug.LogError("0:"+ResourceURL + ResourceListName+GetTheSuffixOfURL());
         yield return ResourceList;
     }
     void Update()
     {
-        //Debug_our.LogError("±àŒ­Æ÷ÀïÃæµÄ±àÂë"+ZipConstants.DefaultCodePage);
         if (DowloadbBegain == 1)
         {
+         //   Debug.Log("111111111111");
             if (((int)Time.realtimeSinceStartup - (int)time) > 30)
             {
                 DowloadbBegain = 2;
-                //Debug_our.LogError("ÍøÂç²»¿ÉŽï"); 
             }
+
             if (ResourceList.isDone && ResourceList.error == null)
             {
-                //LoadingControler.getSelf().showContent(0f, "×ÊÔŽÏÂÔØÍê±Ï");
+                Debug.Log("1:ResourceList.isDone");
                 DowloadbBegain = 3;
                 string resoures = Encoding.UTF8.GetString(ResourceList.bytes);
 
-                #if Debug
-                 Debug_our.LogError("下载下来的字符串是>>>"+resoures);
-#endif 
+                Debug.LogError("下载下来的字符串是>>>"+resoures);
                 string[] resouresLines = resoures.Split('\n');
              //   Debug_our.LogError("Ò»¹²ÓÐ×ÊÔŽµÄÊýÁ¿"+resouresLines.Length);
                 for (int i = 0; i < resouresLines.Length; i++)
                 {
                     string[] resouresOne = resouresLines[i].Split('\t');
-                    #if Debug
-                    Debug_our.LogError(resouresOne[1]);
-#endif
+  //                  Debug.LogError(resouresOne[1]);
                     ResourceObject ro = new ResourceObject(resouresOne[1], resouresOne[2], resouresOne[3], Convert.ToInt64(resouresOne[4]),EnumResourcePostion.NONE);
                     
                     if (!allResources.ContainsKey(ro.OriginSourceName))
                         allResources.Add(ro.OriginSourceName, ro);
                 }
-                // LoadingControler.getSelf().showContent(0f, "×ÊÔŽÁÐ±í×°ÔØÍê±Ï");
+
                 int needdowload = checkTheLocalResoure();
                 if (needdowload == 0)
                 {
                     loadingStr = "1" + "本地资源都是好的";
-                    // Debug_our.LogError("±ŸµØÎÄŒþ¶ŒÊÇºÃµÄ,Ã»ÓÐÊ²ÃŽÒªÏÂÔØµÄ");
                     theResourceIsOK = true;
                     if (this.callback != null)
                     {
-                     //   LoadingControler.getSelf().showContent(1f, "正在加载配置....");
-                        // Debug_our.LogError("±ŸµØÎÄŒþ¶ŒÊÇºÃµÄ£¬»Øµ÷º¯Êý");
                         callback();
                     }
                 }
@@ -198,6 +169,7 @@ public class ResourceLoader : MonoBehaviour
 
         if (DownloadQueue.Count > 0)
         {
+            Debug.Log("DownloadQueue.Count > 0");
             Debug.LogError("总共需要"+DownloadQueue.Count+"下载");
             theResourceIsOK = false;
 //            Debug_our.LogError(" ÏÂÔØ¶ÓÁÐÖÐÓÐÇëÇó");
@@ -211,6 +183,7 @@ public class ResourceLoader : MonoBehaviour
 
         if (SaveQueue.Count > 0)
         {
+            Debug.Log("SaveQueue.Count > 0");
             SaveDataInfo si = null;
             SaveQueue.Dequeue(ref si);
             StartCoroutine(SavedataToFile(si.guid, si.datas, si.rawName));
@@ -218,10 +191,7 @@ public class ResourceLoader : MonoBehaviour
 
     }
 
-   
-    void OnGUI() {
-        
-    }
+
     private IEnumerator DoDowload(WWWreqestInfo wwwRequestInfo,float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -277,21 +247,16 @@ public class ResourceLoader : MonoBehaviour
         for (int i = 0; i < localResourcesList.Length; i++)
         {
             string[] oneRource = localResourcesList[i].Split('\t');
-           // Debug.LogError("本地 资源文件>>>>"+oneRource[0]);
             ResourceObject resourceObject =new ResourceObject(oneRource[0],"-1",oneRource[1],-1,EnumResourcePostion.NONE);
             allResourcesLocal.Add(resourceObject.OriginSourceName,resourceObject);
-
         }
 
         string PathURL = GetTheLocalPathName();
-        //LoadingControler.getSelf().showContent(0f, "check the resoure111111111");
         foreach (string key in allResources.Keys)
         {
-           // Debug_our.LogError("开始检测资源》》》》》" + key);
             if (allResourcesLocal.ContainsKey(key))
             {
                // Debug_our.LogError("在本地找到资源》》》》》"+key);
-             
                 if(allResourcesLocal[key].MD5==allResources[key].MD5)
                 {
                     allResources[key].Postion=EnumResourcePostion.INTERNAL;
@@ -299,12 +264,9 @@ public class ResourceLoader : MonoBehaviour
                 }
                 else
                 {
-                 //   Debug_our.LogError("本地资源和标准资源不一致，我要更新》》》》"+key);
-
+                 //   Debug.LogError("本地资源和标准资源不一致，我要更新》》》》"+key);
                     if (!File.Exists(PathURL + allResources[key].Guid))
                     {
-                        //      LoadingControler.getSelf().showContent(0f, "check the resoure22222222");
-                        // Debug_our.LogError("ÔÚ×ÊÔŽÄ¿ÂŒÀïÃæÃ»ÓÐÕÒµœ");
                         allResources[key].Postion = EnumResourcePostion.OUTER;
                         TotalBytesLength += allResources[key].length;
                         totalNumberNeedDowload++;
@@ -312,23 +274,14 @@ public class ResourceLoader : MonoBehaviour
                     }
                     else
                     {
-                        //    LoadingControler.getSelf().showContent(0f, "check the resoure33333333333");
                         string tempPathURL = PathURL.Remove(PathURL.Length - 1);
-                        //  LoadingControler.getSelf().showContent(0f, "check the resoureaaa");
                         byte[] noPure = FileToBytes(PathURL + allResources[key].Guid);
-                        //LoadingControler.getSelf().showContent(0f, "check the resourebbbbbbbb");
                         byte[] pure = removeRubish(noPure);
-                        //LoadingControler.getSelf().showContent(0f, "check the resoureccccccccc");
                         byte[] rawBytes = UnZipFile(pure);
-                        //LoadingControler.getSelf().showContent(0f, "check the resoureddddddddd");
                         string localMD5 = bytesMD5Value(rawBytes);
-                        //LoadingControler.getSelf().showContent(0f, "check the resoureeeeeeeeeeeeeeee");
 
-
-                        //LoadingControler.getSelf().showContent(0f, "check the resoure444444444");
                         if (localMD5 != allResources[key].MD5)
                         {
-                            //LoadingControler.getSelf().showContent(0f, "check the resoure5555555555");
                             //Debug_our.LogError("·¢ÏÖ±ŸµØ×ÊÔŽËð»µ¡·¡·¡· ÉŸ³ý" + key);
                             File.Delete(PathURL + allResources[key].Guid);
                             allResources[key].Postion=EnumResourcePostion.OUTER;
@@ -339,25 +292,15 @@ public class ResourceLoader : MonoBehaviour
                         else
                         {
                             allResources[key].Postion = EnumResourcePostion.OUTER;
-                            //LoadingControler.getSelf().showContent(0f, "check the resoure666666666");
                             //Debug_our.LogError("·¢ÏÖ±ŸµØ×ÊÔŽ MD5Öµ Ã»ÓÐ·¢Éú±ä»¯¡·¡·¡·"+key);
                         }
                     }
-
-
-
-                    //allResources[key].Postion = EnumResourcePostion.OUTER;
-                    //TotalBytesLength += allResources[key].length;
-                    //totalNumberNeedDowload++;
-                    //DownloadQueue.Enqueue(new WWWreqestInfo(ResourceURL + allResources[key].Guid, key));
                 }
             }
             else
             {
                 if (!File.Exists(PathURL + allResources[key].Guid))
                 {
-                    //      LoadingControler.getSelf().showContent(0f, "check the resoure22222222");
-                    // Debug_our.LogError("ÔÚ×ÊÔŽÄ¿ÂŒÀïÃæÃ»ÓÐÕÒµœ");
                     allResources[key].Postion = EnumResourcePostion.OUTER;
                     TotalBytesLength += allResources[key].length;
                     totalNumberNeedDowload++;
@@ -365,24 +308,14 @@ public class ResourceLoader : MonoBehaviour
                 }
                 else
                 {
-                    //    LoadingControler.getSelf().showContent(0f, "check the resoure33333333333");
                     string tempPathURL = PathURL.Remove(PathURL.Length - 1);
-                    //  LoadingControler.getSelf().showContent(0f, "check the resoureaaa");
                     byte[] noPure = FileToBytes(PathURL + allResources[key].Guid);
-                    //LoadingControler.getSelf().showContent(0f, "check the resourebbbbbbbb");
                     byte[] pure = removeRubish(noPure);
-                    //LoadingControler.getSelf().showContent(0f, "check the resoureccccccccc");
                     byte[] rawBytes = UnZipFile(pure);
-                    //LoadingControler.getSelf().showContent(0f, "check the resoureddddddddd");
                     string localMD5 = bytesMD5Value(rawBytes);
-                    //LoadingControler.getSelf().showContent(0f, "check the resoureeeeeeeeeeeeeeee");
 
-
-                    //LoadingControler.getSelf().showContent(0f, "check the resoure444444444");
                     if (localMD5 != allResources[key].MD5)
                     {
-                        //LoadingControler.getSelf().showContent(0f, "check the resoure5555555555");
-                        //Debug_our.LogError("·¢ÏÖ±ŸµØ×ÊÔŽËð»µ¡·¡·¡· ÉŸ³ý" + key);
                         allResources[key].Postion = EnumResourcePostion.OUTER;
                         File.Delete(PathURL + allResources[key].Guid);
                         TotalBytesLength += allResources[key].length;
@@ -392,8 +325,6 @@ public class ResourceLoader : MonoBehaviour
                     else
                     {
                         allResources[key].Postion = EnumResourcePostion.OUTER;
-                        //LoadingControler.getSelf().showContent(0f, "check the resoure666666666");
-                        //Debug_our.LogError("·¢ÏÖ±ŸµØ×ÊÔŽ MD5Öµ Ã»ÓÐ·¢Éú±ä»¯¡·¡·¡·"+key);
                     }
                 }
 
@@ -402,10 +333,6 @@ public class ResourceLoader : MonoBehaviour
         return totalNumberNeedDowload;
     }
 
-    public bool HasTheHideServers()
-    {
-        return allResources.ContainsKey("HideServers");
-    }
 
     public byte[] getRawResourceBytes(string key)
     {
@@ -429,37 +356,15 @@ public class ResourceLoader : MonoBehaviour
             }
             else
             {
-                #if Debug
-                Debug_our.LogError("本地资源找到啦， 但是存储位置有问题<<<");
-                #endif
+                Debug.LogError("本地资源找到啦， 但是存储位置有问题<<<");
                 return null;
             }
         }
         else
         {
-            #if Debug
-            Debug_our.LogError("本地资源没有找到 你所需要的资源");
-#endif
+            Debug.LogError("本地资源没有找到 你所需要的资源");
             return null;
         }
-
-
-
-
-
-
-        //if (allResources.ContainsKey(key))
-        //{
-        //    string PathURL = GetTheLocalPathName();
-        //    byte[] noPure = FileToBytes(PathURL + allResources[key].Guid);
-        //    byte[] pure = removeRubish(noPure);
-        //    byte[] rawBytes = UnZipFile(pure);
-        //    return rawBytes;
-        //}
-        //else
-        //{
-        //    return null;
-        //}
     }
     private byte[] FileToBytes(string filePath)
     {
@@ -513,7 +418,6 @@ public class ResourceLoader : MonoBehaviour
         CurrentBytesLength += allResources[_rawName].length;
         currentNumberDowdlod++;
        // Debug_our.LogError(_rawName+"保存完毕");
-        //Debug_our.LogError("µ±Ç°ÒÑŸ­ÏÂÔØµÄ" + CurrentBytesLength);
         loadingStr = ((float)CurrentBytesLength / (float)TotalBytesLength).ToString() + currentNumberDowdlod + "/" + totalNumberNeedDowload + "个 " + (int)(CurrentBytesLength) + "/" + (TotalBytesLength) + "B";
         checkALLresoure();
         yield break;
@@ -527,8 +431,6 @@ public class ResourceLoader : MonoBehaviour
             loadingStr = "1" + "下载完成";
             if (this.callback != null)
             {
-              //  LoadingControler.getSelf().stopSelf();
-              //  LoadingControler.getSelf().showContent(1f, "正在加载配置....");
                 // Debug_our.LogError("È«²¿ÎÄŒþ¶ŒÒÑŸ­ÏÂÔØÍê³É ¡£²¢ÇÒ±£ŽæÍê±Ï£¬³É¹Š»Øµ÷");
                 this.callback();
             }
@@ -599,17 +501,9 @@ public class ResourceLoader : MonoBehaviour
         if (zipBytes == null)
         {
             loadingStr = "0unzipTheResource +++11";
-#if Debug
-            Debug_our.LogError("zipBytes is null");
-#endif
             return null;
         }
-        /*
-        if (!Directory.Exists(diretoryName)) 
-        {
-            Debug_our.LogError("ÕÒ²»µœ£¬ÒªœâÑ¹µœÄÇÀïÈ¥µÄÎÄŒþŒÐ");
-            
-        }*/
+
         using (MemoryStream ms = new MemoryStream(zipBytes))
         {
            // LoadingControler.getSelf().showContent(0f, "unzipTheResource +++2222");
@@ -619,26 +513,18 @@ public class ResourceLoader : MonoBehaviour
              //   LoadingControler.getSelf().showContent(0f, "unzipTheResource +++333333333333333");
                 while ((theEntry = s.GetNextEntry()) != null)
                 {
-
-               //     LoadingControler.getSelf().showContent(0f, "unzipTheResource +++44444444" + theEntry.Name);
-
                     string fileName = Path.GetFileName(theEntry.Name);
-
-
-
                     if (fileName != String.Empty)
                     {
-                 //       LoadingControler.getSelf().showContent(0f, "unzipTheResource +++555555555555555");
                         datas = new byte[s.Length];
                         s.Read(datas, 0, datas.Length);
-
                     }
                 }
             }
         }
-       //LoadingControler.getSelf().showContent(0f, "unzipTheResource +++666666666666");
         return datas;
     }
+
     // <summary>
     /// ŒÆËãÎÄŒþµÄMD5Öµ
     /// </summary>
@@ -660,6 +546,7 @@ public class ResourceLoader : MonoBehaviour
         }
         return strMd5;
     }
+
     /// <summary>
     /// ŒÆËã×Ö·ûŽ®µÄMD5Öµ
     /// </summary>
@@ -692,10 +579,8 @@ public class ResourceLoader : MonoBehaviour
         }
         return sTemp.ToLower();
     }
+
     private const string PATH_SPLIT_CHAR = "\\";
-
-
-
 
     /// <summary>
     /// žŽÖÆÖž¶šÄ¿ÂŒµÄËùÓÐÎÄŒþ,²»°üº¬×ÓÄ¿ÂŒŒ°×ÓÄ¿ÂŒÖÐµÄÎÄŒþ

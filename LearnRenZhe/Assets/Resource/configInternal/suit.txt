@@ -1,0 +1,11 @@
+﻿套装ID	套装名称	套装数量	套装品质	套装级别（策划用）	套装组件	2件加成效果	3件加成效果	4件加成效果	5件加成效果	2件套加成描述	3件套加成描述	4件套加成描述	5件套加成描述
+id	name	number	quality	lv	contain	gain_1	gain_2	gain_3	gain_4	gain_disc1	gain_disc2	gain_disc3	gain_disc4
+1350000001	木叶上忍套装	5	3	D0_精力防御	2300009;3300009;1300009;5300016;4300016	baseShanBiAdd:26	baseHpAdd:300	baseFangYuPerAdd:0.15	baseNeiLiAdd:0.26	闪避26	生命300	防御15%	精力26%
+1250000001	木叶中忍套装	5	2	N0_新手	2200008;3200006;1200004;4200005;5200009	baseWuLiAdd:50	baseBaoJiAdd:20	baseWuLiAdd:100	baseHuiXinAdd:25	力量50	暴击20	武力100	会心25
+1450000001	宇智波套装	5	4	T1_预留	2400004;3400012;5400002;4400013;1500009	baseNeiLiAdd:500	baseWuLiAdd:600	baseBaoJiAdd:124	wuXuPerAdd:0.2	精力500	力量600	暴击124	无序20%
+1450000002	火影套装	5	4	T0_防御	3400010;2400012;5400012;4400001;1400010	baseFangYuPerAdd:0.15	baseHpPerAdd:0.15	baseKangBaoAdd:94	baseShanBiAdd:65	防御15%	生命15%	抗暴94	闪避85
+1450000003	晓部套装	5	4	T0_忍术攻击	1300014;4400005;2300016;3300005;5300013	baseShenFaPerAdd:0.15	baseBaoJiAdd:56	baseWuLiPerAdd:0.15	baseNeiLiPerAdd:0.26	速度15%	暴击56	力量15%	精力26%
+1350000003	暗部套装	5	3	D0_体术攻击	1300002;2400001;3300004;4300015;5300001	baseMingZhongAdd:26	baseShenFaPerAdd:0.15	baseNeiLiPerAdd:0.15	baseWuLiPerAdd:0.2	命中26	速度15%	精力15%	力量20%
+1450000004	西瓜皮套装	5	4	T0_体术攻击	2400014;5400013;3400005;4400002;1400007	baseMingZhongAdd:26	baseWuLiPerAdd:0.15	baseBaoJiAdd:124	baseWuLiPerAdd:0.2	命中26	力量15%	暴击124	力量20%
+1450000005	雾忍套装	3	4	T0_忍体	3400014;5400014;2300012	baseWuLiPerAdd:0.12	baseNeiLiPerAdd:0.16	-1	-1	力量12%	精力16%	-1	-1
+1450000006	六道套装	5	4	T1_忍体	1500006;1400008;2400013;5400006;3400011	baseWuLiPerAdd:0.13	baseNeiLiPerAdd:0.16	baseShenFaPerAdd:0.15	baseWuLiPerAdd:0.24	力量13%	精力16%	速度15%	力量24%

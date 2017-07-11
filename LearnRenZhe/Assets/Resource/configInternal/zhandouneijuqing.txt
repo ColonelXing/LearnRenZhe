@@ -1,0 +1,5 @@
+小关卡ID 	战斗内剧情左侧弟子ID (;前1代表弟子ID，2代表怪物ID)	战斗内剧情右侧弟子ID 	左剧情内容	右剧情内容
+ID	zuoID	youID	zuoDesc	youDesc
+10007	xiaoying	zuozhu	#1啊~好帅啊！	#1我可是村子最帅的人。
+10009	mingren	kakaxi	#1上当了…上当了…	#1竟敢作弄你们的老师。
+10011	xiaoying	kakaxi	#1团队合作？	#1是的，没有一点团队意识，那我就给你们点教训吧!
