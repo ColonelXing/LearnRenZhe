@@ -1,0 +1,4 @@
+4.7.2f1:2.3.0.0
+Android
+C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\androidplayer/Managed/UnityEngine.dll
+C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.7.2/Standalone/UnityEngine.UI.dll
