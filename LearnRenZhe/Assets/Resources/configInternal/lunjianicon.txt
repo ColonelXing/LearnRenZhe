@@ -1,0 +1,8 @@
+奖励ID	图标
+getId	icon
+yuanshen	yuanshen
+yinliang	yinbi2
+jin	jinbaoxiang1
+yin	yinbaoxiang
+tong	tongbaoxiang
+shanggu	jinbaoxiang1

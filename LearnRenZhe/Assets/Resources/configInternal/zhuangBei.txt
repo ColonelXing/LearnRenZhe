@@ -1,0 +1,261 @@
+﻿装备ID(第一位代表位置、品质）	装备名	装备类名	图标id	描述	品质（1、丁；2：丙；3：乙；4：甲）	部位（1 兵器 2 头饰 3 服饰 4 饰品 5鞋子)	初始属性	强化成长	附加属性	缘分弟子	缘分名	缘分描述	缘分加成	装备残片	身价	初始强化金钱(等级^2*init）	隶属套装	备注（策划使用，程序不用读）
+id	name	classPath	icon	desc	quality	ztype	shuXing	chengZhang	fuShuXing	diZiZhuangbeiYuanFen	yuanFenName	yuanFendesc	yuanFenJiaCheng	canPianShuLiang	shenJia	initUpgardeCoins	suitID	tips
+1400001	如意棒	item.Equip	shenqi19	是一只很硬很长的猴子变化而成的，属于三代目火影专属的装备，因为是猴子变化的，在用力打到某些硬物上时棒子会很痛。	4	1	baseWuLiAdd:59_59	4.36_5.54	baseShanBiAdd:18;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1400002	亲热天堂	item.Equip	shenqi3	自来也所写的图书。是S级禁书。	4	4	baseNeiLiAdd:81_81	7.01_8.63	baseWuLiPerAdd:0.07;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1	优先保留，转换为饰品
+1400003	名刀黑泽	item.Equip	shenqi4	非常忙的名刀，在海贼王中扮演黑刀秋水、在死神中扮演天锁斩月，身价昂贵，据说出场费高达100万元，世界上出场费最贵的刀。	4	1	baseWuLiAdd:59_59	4.63_5.81	baseWuLiPerAdd:0.12;baseBaoJiAdd:56	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1400004	断刀·斩首	item.Equip	shenqi12	横截面积大，流线型，利于砍人，最最重要的是就算断了只要见血就能回复，不要小看这一点，因为这个妈妈再也不用为你的武器维修费操心了，节省了一大笔钱。	4	1	baseWuLiAdd:59_59	4.44_5.62	baseFangYuPerAdd:0.14;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1400005	大刀·鲛肌	item.Equip	shenqi15	"刀名鲛肌，用来削人,只认自己的主人鬼鲛，会对其他人进行攻击。是一把被绷带所裹满的大刀，绷带下是深蓝色的刀身，布满倒刺。这把刀具有生命，能够在战斗中吸取对手的查克拉。"	4	1	baseWuLiAdd:59_59	4.92_6.1	baseMingZhongAdd:19;baseBaoJiAdd:24	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1	优先保留
+1400006	性质兵器	item.Equip	hyzb31	两把双刃，可随意转换卡克拉属性进行攻击	4	1	baseWuLiAdd:59_59	4.7_5.88	baseBaoJiAdd:19;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	
+1400007	双节棍	item.Equip	hyzb32	快使用双节棍哼哼哈嘿！	4	1	baseWuLiAdd:59_59	4.82_6	baseWuLiPerAdd:0.2;baseBaoJiAdd:17	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	1450000004	
+1400008	六道勾玉	item.Equip	shenqi6	六道仙人所佩戴，具有开启与封印写轮眼的能力，而写轮眼里勾玉越多能力越强，最多可以开启6勾玉写轮眼，而八尺琼勾玉就是关键。	4	4	baseNeiLiAdd:81_81	7.13_8.75	baseMingZhongAdd:19;baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	1450000006	
+1400009	十拳剑	item.Equip	shenqi5	传说须佐之男以此剑斩杀八歧大蛇，取大蛇尾为草薙剑，鼬以此剑封印了大蛇丸。	4	1	baseWuLiAdd:59_59	5.23_6.41	baseNeiLiPerAdd:0.14;baseShenFaPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1	优先保留
+1400011	三星扇	item.Equip	shenqi8	刀枪不入，平常人只要见到三颗星就败了	4	1	baseWuLiAdd:59_59	4.36_5.54	baseShanBiAdd:18;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	
+1400012	雷刀·牙	item.Equip	bingQi34	七忍刀中的一把，应该不是用犬夜叉爸爸的牙打造的，没有很严重的口臭味儿，却意外的有很清新的味道，越闻越精神。	4	1	baseWuLiAdd:59_59	5.25_6.43	baseNeiLiPerAdd:0.14;baseFangYuPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1	优先保留
+1400013	钝刀·兜割	item.Equip	bingQi19	七忍刀中的一把，兜割就是专门用来割别人兜用的，拥有了此刀，您就掌握了一项新的求生技能和发财致富手段，幸福一生。	4	1	baseWuLiAdd:59_59	5.11_6.29	baseBaoJiAdd:19;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1	优先保留
+1500001	长刀·缝针	item.Equip	bingqi5	七忍刀中的一把，虽然名字中有针，但是不是真的针，虽然不是真的针，却还绑着线。用来缝制很大件的衣服时是很有用的。	4	1	baseWuLiAdd:59_59	5.19_6.37	baseShenFaPerAdd:0.18;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1	优先保留
+1500002	爆刀·飞沫	item.Equip	bingqi4	七忍刀中的一把，可以边攻击，边吐口水的刀，据说脾气很爆，遇到人就会爆炸，杀伤范围非常的大，其实是用来做土木作业用的。	4	1	baseWuLiAdd:59_59	4.69_5.87	baseWuLiPerAdd:0.15;baseMingZhongAdd:38	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1500003	双刀·平目鲽	item.Equip	shenqi1	七忍刀中的一把，先是从平目鲽两个圆孔发出气体然后整个平目鲽整体发光，形成查克拉聚集体，然后发出查克拉光球爆发出去，具有强大的破坏力。	4	1	baseWuLiAdd:59_59	4.62_5.8	baseMingZhongAdd:57;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1500004	七星剑·咒灵	item.Equip	shenqi16	传说中太上老君，不对，是天上掉下来的星石由六道仙人制成的剑。能斩断并诅咒对手言灵的武器，六道仙人神器之一。据说某天皇也有一把。	4	1	baseWuLiAdd:59_59	4.38_5.56	baseHpPerAdd:0.22;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1500005	芭蕉扇·风暴	item.Equip	shenqi18	使用大量查克拉可以产生巨大的风量的，消暑专用工具，有了这把扇子之后，酷夏到来之时连空调都省了。注：此扇是人力发动的。	4	1	baseWuLiAdd:59_59	4.6_5.78	baseBaoJiAdd:56;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1500006	红葫芦·封印	item.Equip	shenqi9	一只红色的葫芦，原是六道仙人的神器之一，后来落到了金角银角手中，在金角银角偷袭二代火影时起到了很关键的作用。	4	1	baseWuLiAdd:59_59	5.05_6.23	baseNeiLiPerAdd:0.22;baseHuiXinAdd:38	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	1450000006	优先保留
+1500007	愰金绳·驱魔	item.Equip	shenqi17	六道仙人神器之一，可以捆住任何东西的绳子，听说是六道仙人看了一本叫<西游记>的书后，发明的产物。没有任何药用价值地	4	1	baseWuLiAdd:59_59	4.76_5.94	baseWuLiPerAdd:0.2;baseBaoJiAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1500008	琥珀瓶·净蚀	item.Equip	shenqi2	只需要叫出对方的名字，并且对方一答应就会被吸入其中。	4	1	baseWuLiAdd:59_59	4.32_5.5	baseNeiLiPerAdd:0.3;baseBaoJiAdd:38	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+1500010	八咫镜	item.Equip	shenqi7	日本传说中的三神器之一，据说是天照大神持有的装备。可以反弹所有类型的伤害，使用得当还可成为攻防一体的超厉害防具。	4	1	baseWuLiAdd:59_59	4.18_5.36	baseShenFaPerAdd:0.13;baseKangBaoAdd:39	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1	优先保留
+2300012	雾忍特忍护额	item.Equip	wute	漂浮于外海，规模仅次于木叶，擅长使用雾忍术的村子，完成S级任务次数达到后，晋升特别上忍发放的护额	4	2	baseHpAdd:117_117	9.74_12.08	baseShenFaPerAdd:0.07;baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	1450000005	
+2400002	白的面罩	item.Equip	tou0	洁白的脸颊，纯净的心灵，幸福的眼泪都隐藏在了这个面具下	4	2	baseHpAdd:117_117	9.74_12.08	baseNeiLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	-1	保留
+2400003	三代头盔	item.Equip	hyzb22	三代苦战大蛇丸时所佩戴，抵挡了不少伤害。	4	2	baseHpAdd:117_117	9.92_12.26	baseNeiLiPerAdd:0.14;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	-1	
+2400005	呼吸面罩	item.Equip	hyzb19	为了控制体内毒气，山椒鱼所佩戴的呼吸机	4	2	baseHpAdd:117_117	9.93_12.27	baseWuLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	-1	优先保留
+2400006	根部面具	item.Equip	tou24	团藏手下的特别上忍所佩戴。	4	2	baseHpAdd:117_117	8.21_10.55	baseHpPerAdd:0.08;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;9	56	-1	
+2400007	叶丸目镜	item.Equip	tou30	虽然木叶丸还在成长，但是他也是继承了火之意志的忍者！	4	2	baseHpAdd:117_117	10.09_12.43	baseHpPerAdd:0.1;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	-1	保留
+2400008	风之影帽	item.Equip	tou12	火影之风影系的帽子，不可多得的稀世宝物。	4	2	baseHpAdd:117_117	9.23_11.57	baseHpPerAdd:0.1;baseShenFaPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;10	56	-1	
+2400009	雷之影帽	item.Equip	tou12	火影之雷影系的帽子，看起来威猛异常。	4	2	baseHpAdd:117_117	10.34_12.68	baseMingZhongAdd:19;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;12	56	-1	
+2400010	土之影帽	item.Equip	tou12	火影之土影系的帽子，到处彰显着王者的气概！	4	2	baseHpAdd:117_117	8.95_11.29	baseShenFaPerAdd:0.1;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;10	56	-1	
+2400011	水之影帽	item.Equip	tou12	火影之水影系的帽子，散发着荣誉的光环。	4	2	baseHpAdd:117_117	9.54_11.88	baseMingZhongAdd:19;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	-1
+2400013	六道头盔	item.Equip	tou12	六道仙人所穿，伤害逆天！	4	2	baseHpAdd:117_117	8.4_10.74	baseHpPerAdd:0.1;baseWuLiPerAdd:0.11	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;10	56	1450000006
+3400001	战术背心	item.Equip	hyzb0	木叶专供，只有成为特别上忍才有哟。	4	3	baseFangYuAdd:59_59	4.92_6.1	baseHpPerAdd:0.18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1
+3400002	卡卡西战衣	item.Equip	yi2	陪伴了卡卡西好多年的战衣，就是面罩舍不得换。	4	3	baseFangYuAdd:59_59	4.68_5.86	baseShenFaPerAdd:0.13;baseFangYuPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1
+3400003	暗部战衣	item.Equip	yi3	木叶暗部经常穿戴，让人一见就知道“纪检委”来了！	4	3	baseFangYuAdd:59_59	4.92_6.1	baseBaoJiAdd:20;baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1
+3400004	不败战衣	item.Equip	hyzb21	"问天下英雄，谁能真正笑傲忍界！——哥只是个传说，不要想念哥。,"	4	3	baseFangYuAdd:59_59	5.07_6.25	baseNeiLiPerAdd:0.06;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1
+3400005	热血战衣	item.Equip	hyzb40	绿色的紧身衣，这就是青春。	4	3	baseFangYuAdd:59_59	5.13_6.31	baseShenFaPerAdd:0.14;baseBaoJiAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	1450000004
+3400006	大名披风	item.Equip	hyzb7	大名的权势之气，能够让人飞翔空中，不必落于地面，在争斗中可谓占尽了便宜。	4	3	baseFangYuAdd:59_59	4.62_5.8	baseShenFaPerAdd:0.1;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	-1
+3400007	叶丸童装	item.Equip	yi17	嗯嗯。。虽然很小，但是蕴含的火之意志十分强烈。	4	3	baseFangYuAdd:59_59	5.21_6.39	baseFangYuPerAdd:0.18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1
+3400008	晓的风衣	item.Equip	yi4	晓组织专供，上绣出云图，人人必穿，杀人越货，封印尾兽，装酷耍帅必备。	4	3	baseFangYuAdd:59_59	5.05_6.23	baseNeiLiPerAdd:0.22	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1
+3400009	九吞八乍甲	item.Equip	hyzb9	"宝甲上画九只作吞食状的神兽的兽面，穿戴过程需要扎带八次。传闻是封神榜中纣王一国之主的象征。,"	4	3	baseFangYuAdd:59_59	5.07_6.25	baseMingZhongAdd:19;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1
+3400011	六道风衣	item.Equip	hyzb35	六道仙人所穿，防御逆天！	4	3	baseFangYuAdd:59_59	4.5_5.68	baseNeiLiPerAdd:0.18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	1450000006
+3400013	紫金八叉甲	item.Equip	yi20	"乌黑的金甲，却从里到外透着淡淡的金光，阳光下闪耀着别样的光芒，一看就是绝世精品。,"	4	3	baseFangYuAdd:59_59	4.95_6.13	baseBaoJiAdd:19;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	-1
+4400002	护手绷带	item.Equip	shiping17	惯用体术的忍者用来保护自己双手的绷带。	4	4	baseNeiLiAdd:81_81	7.07_8.69	baseNeiLiPerAdd:0.02;baseHuiXinAdd:17	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	1450000004
+4400003	玉石项链	item.Equip	shiping37	火影佩戴的项链。是忍者向往的宝物。	4	4	baseNeiLiAdd:81_81	7.07_8.69	baseMingZhongAdd:19;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1
+4400004	七窍翠玉	item.Equip	shiping23	"翡翠形，玲珑心，周身散发着淡淡的清凉雾气，不知是哪位功参造化的前辈所遗留下来的。,"	4	4	baseNeiLiAdd:81_81	7.13_8.75	baseWuLiPerAdd:0.14;baseMingZhongAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1
+4400006	千蝶舞翠	item.Equip	shiping35	"蝶状的饰品，两侧的飞翼好比那翩翩起舞的彩蝶之翼，浑身七彩斑斓，不断的放出奇异的光芒。,"	4	4	baseNeiLiAdd:81_81	6.38_8	baseBaoJiAdd:38	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1	
+4400007	死亡之链	item.Equip	4400007	虽然带上死亡之链的人都很悲剧，但是里面蕴含的火之意志无疑也最最强烈的。	4	4	baseNeiLiAdd:81_81	7.02_8.64	baseShenFaPerAdd:0.1;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1	
+4400008	四代项链	item.Equip	shiping16	四代火影所佩戴的项链，象征着高贵。	4	4	baseNeiLiAdd:81_81	6.89_8.51	baseShanBiAdd:36	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1	保留
+4400009	影之链	item.Equip	shiping32	火影才有资格佩戴的挂件，十分稀有。	4	4	baseNeiLiAdd:81_81	5.8_7.42	baseShenFaPerAdd:0.1;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;5	56	-1	
+4400010	一代护腕	item.Equip	hyzb23	一代火影千手柱间所佩戴的护腕，蕴含森林之力。	4	4	baseNeiLiAdd:81_81	7.09_8.71	baseFangYuPerAdd:0.06;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1	
+4400011	二代护腕	item.Equip	hyzb11	二代火影千手扉间所佩戴的护腕，蕴含云雷之力。	4	4	baseNeiLiAdd:81_81	7.28_8.9	baseShanBiAdd:18;baseKangBaoAdd:30	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1	
+4400012	八卦护手	item.Equip	hyzb41	左阴右阳，一边风之力，一边雷之力。	4	4	baseNeiLiAdd:81_81	6.64_8.26	baseFangYuPerAdd:0.14;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	-1	
+5400001	绝影靴	item.Equip	5400001	忍者村精英上忍所穿戴的靴子之一，只有在召开会议时才会穿此靴子。	4	5	baseShenFaAdd:120_120	9.16_11.56	baseShenFaPerAdd:0.1;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;7	56	-1	
+5400003	忍影靴	item.Equip	xie6	忍者村精英上忍所穿戴的靴子之一，只有在执行S级任务时才会穿此靴子。	4	5	baseShenFaAdd:120_120	8.53_10.93	baseShenFaPerAdd:0.04;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;7	56	-1	
+5400004	哀影靴	item.Equip	xie6	忍者村精英上忍所穿戴的靴子之一，只有在失去亲人时才会穿此靴子。	4	5	baseShenFaAdd:120_120	10.24_12.64	baseShenFaPerAdd:0.02;baseShanBiAdd:17	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	-1	
+5400005	毁影靴	item.Equip	xie6	忍者村精英上忍所穿戴的靴子之一，只有在战争时才会穿此靴子。	4	5	baseShenFaAdd:120_120	8.85_11.25	baseShanBiAdd:18;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;7	56	-1	
+5400006	始祖护足	item.Equip	xie6	六道仙人传承下的足具	4	5	baseShenFaAdd:120_120	10.31_12.71	baseWuLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	1450000006	
+5400007	祭影靴	item.Equip	5400007	忍者村精英上忍所穿戴的靴子之一，只有在祭祀时才会穿此靴子。	4	5	baseShenFaAdd:120_120	10.57_12.97	baseShanBiAdd:18;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	-1	
+5400008	土影战靴	item.Equip	xie6	五大忍者村首领之一，最伟大的忍者，土影系首领的战靴。	4	5	baseShenFaAdd:120_120	9.08_11.48	baseFangYuPerAdd:0.14;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;7	56	-1	
+5400009	雷影战靴	item.Equip	xie6	五大忍者村首领之一，最伟大的忍者，雷影系首领的战靴。	4	5	baseShenFaAdd:120_120	10.53_12.93	baseMingZhongAdd:19;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	-1	
+5400010	水影战靴	item.Equip	xie6	五大忍者村首领之一，最伟大的忍者，水影系首领的战靴。	4	5	baseShenFaAdd:120_120	8.56_10.96	baseHpPerAdd:0.06;baseShenFaPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;7	56	-1	
+5400011	风影战靴	item.Equip	xie6	五大忍者村首领之一，最伟大的忍者，风影系首领的战靴。	4	5	baseShenFaAdd:120_120	9.64_12.04	baseFangYuPerAdd:0.14;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	-1	
+1500009	写轮眼团扇	item.Equip	shenqi13	上面刻着写轮眼的图案，只要轻轻一挥就能毁灭一个村子的写轮眼团扇，只有第一个开启万花筒写轮眼的男人才配拥有这把写轮眼团扇。	4	1	baseWuLiAdd:59_59	5.27_6.45	baseWuLiPerAdd:0.12;baseNeiLiPerAdd:0.15	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	1450000001	宇智波套装
+2400004	带土面具	item.Equip	tou31	阿飞？带土？斑？好吧 他们都佩戴过。	4	2	baseHpAdd:117_117	9.68_12.02	baseFangYuPerAdd:0.14;baseKangBaoAdd:20	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	1450000001	宇智波套装
+3400012	佐助忍服	item.Equip	3400012	佐助小时穿的衣服，见证了灭族痛，哥哥恨，团藏仇，陪伴佐助一步步成长到让人仰视的地位！	4	3	baseFangYuAdd:59_59	4.17_5.35	baseWuLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	1450000001	宇智波套装
+4400013	宇智波徽记	item.Equip	shiping32	宇智波家族家传的徽记	4	4	baseNeiLiAdd:81_81	7.25_8.87	baseBaoJiAdd:15;baseHuiXinAdd:17	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	1450000001	宇智波套装
+5400002	宇智波草履	item.Equip	xie6	宇智波家族使用的特别足具。	4	5	baseShenFaAdd:120_120	9.68_12.08	baseHpPerAdd:0.1;baseNeiLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	1450000001	宇智波套装
+1400010	雷神剑	item.Equip	1400010	二代火影佩戴的传奇武器，葵盗走之后，被鸣人击碎。	4	1	baseWuLiAdd:59_59	5.22_6.4	baseShenFaPerAdd:0.1;baseBaoJiAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	1450000002	火影套装
+2400012	火之影帽	item.Equip	2400012	火影之水影系的帽子，非同寻常之物。	4	2	baseHpAdd:117_117	8.51_10.85	baseHpPerAdd:0.08;baseShanBiAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;10	56	1450000002	火影套装
+3400010	四代披风	item.Equip	3400010	"帝子浮江日，龙骧出峡来！四代常披之甲，坚韧无比。,"	4	3	baseFangYuAdd:59_59	4.74_5.92	baseShanBiAdd:15;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;5	56	1450000002	火影套装
+4400001	火之意志	item.Equip	4400001	"树叶飞舞之处,烈火必燃,火光将会照亮村子,树叶将会再次萌生"	4	4	baseNeiLiAdd:81_81	6.38_8	baseHpPerAdd:0.12;baseNeiLiPerAdd:0.18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	1450000002	火影套装
+5400012	火影战靴	item.Equip	5400012	五大忍者村首领之一，最伟大的忍者，火影系首领的战靴。	4	5	baseShenFaAdd:120_120	9.92_12.32	baseFangYuPerAdd:0.24	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	1450000002	火影套装
+1300014	草雉剑	item.Equip	1300014	传说斩杀“八歧大蛇”后从其尾部取得，“三神器”之一，但草薙剑在火影中并非唯一。	4	1	baseWuLiAdd:59_59	4.44_5.62	baseBaoJiAdd:26;baseNeiLiPerAdd:0.19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;3	56	1450000003	晓部套装
+2300016	晓の斗笠	item.Equip	2300016	晓组织的制式斗篷，但是好像很多人都不喜欢戴它。	4	2	baseHpAdd:117_117	9.8_12.14	baseNeiLiPerAdd:0.1;baseShenFaPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;6	56	1450000003	晓部套装
+3300005	晓部风衣	item.Equip	3300005	晓组织所穿戴的衣服，不会轻易让人知道他们的身份。	4	3	baseFangYuAdd:59_59	4.78_5.96	baseWuLiPerAdd:0.1;baseHuiXinAdd:26	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;3	56	1450000003	晓部套装
+4400005	晓之戒指	item.Equip	4400005	晓组织专供，晓里每个人都有不同的戒指且佩戴位置不同。	4	4	baseNeiLiAdd:81_81	6.18_7.8	baseHpPerAdd:0.06;baseNeiLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	65;6	56	1450000003	晓部套装
+5300013	傀儡木履	item.Equip	5300013	相传在各忍国交错的通道之间，会有人穿戴这种靴子，遇到此类人尽量躲远点。	4	5	baseShenFaAdd:120_120	8.86_10.82	baseShenFaPerAdd:0.07;baseHuiXinAdd:18	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;5	56	1450000003	晓部套装
+5400013	负重鞋	item.Equip	xie6	阿凯和李洛克用来做负重训练的鞋子，非常之沉重。	4	5	baseShenFaAdd:120_120	9.04_11	baseWuLiPerAdd:0.14	10000;22001	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:121	6	84;5	57	1450000004
+2400014	西瓜头	item.Equip	tou31	特殊的西瓜头造型，识别度极高，不说你都知道是谁	4	2	baseHpAdd:117_117	8.21_10.55	baseHpPerAdd:0.08;baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;9	56	1450000004
+3400014	雾忍背心	item.Equip	hyzb9	雾忍用的战术背心，防水性能超强。	4	3	baseFangYuAdd:59_59	5.03_6.21	baseNeiLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	59;6	56	1450000005
+5400014	雾忍雨靴	item.Equip	xie6	雾忍专用的鞋子，可以帮助使用者随意在水上行走。	4	5	baseShenFaAdd:120_120	9.6_12.00	baseShenFaPerAdd:0.07;baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	1450000005
+1400014	镰刀斧	item.Equip	bingQi12	半藏所用的特制武器，镰刀上涂有剧毒。	4	1	baseWuLiAdd:59_59	5.1_6.28	baseWuLiPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;6	56	-1
+2400015	联军护额	item.Equip	wute	三船设计给忍者联军的统一护额，意味深远	4	2	baseHpAdd:117_117	9.74_12.08	baseShenFaPerAdd:0.11;baseMingZhongAdd:24	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	117;11	56	-1
+5400015	联军足具	item.Equip	xie6	忍者联军穿着的统一足具。	4	5	baseShenFaAdd:120_120	10.24_12.64	baseShenFaPerAdd:0.02;baseBaoJiAdd:65	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	6	84;8	56	-1
+1300001	通灵卷轴	item.Equip	xueshu	召唤各式各样的武器，武器强弱由人来决定。	3	1	baseWuLiAdd:39_39	2.9_3.68	baseMingZhongAdd:38	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1
+1300003	起爆符	item.Equip	hyzb5	三代目亲手制作的起爆符，虽然单个威力不大，但是多张起爆威力不小。	3	1	baseWuLiAdd:39_39	3.26_4.04	baseNeiLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300004	长链忍杖	item.Equip	bingQi31	紫铜链环绕棒身，攻击的时候总是伴随着铃铛样的声音。	3	1	baseWuLiAdd:39_39	3.34_4.12	baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300005	锁链战锤	item.Equip	hyzb25	秘银打造的锤头，檀木棒身，威力不小	3	1	baseWuLiAdd:39_39	3.07_3.85	baseNeiLiPerAdd:0.3	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1
+1300006	鬼丸刀	item.Equip	1300006	刀面雕刻着一个个鬼纹，出鞘时总伴随着哀嚎声	3	1	baseWuLiAdd:39_39	3.27_4.05	baseHpPerAdd:0.07;baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300007	疾风扇	item.Equip	bingQi26	浑身翠绿，附上疾风的法阵的忍扇，让武器威力更上一层楼	3	1	baseWuLiAdd:39_39	3.36_4.14	baseWuLiPerAdd:0.1;baseNeiLiPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300008	镰鼬忍杖	item.Equip	bingQi12	挥动忍杖，总是会带动着音爆声	3	1	baseWuLiAdd:39_39	3.27_4.05	baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300010	虎彻刀	item.Equip	bingQi18	刀锋一截截的虎牙，刀伤还带着撕裂。	3	1	baseWuLiAdd:39_39	3.01_3.79	baseShenFaPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1
+1300011	岚夜剑	item.Equip	bingqi40	未打开时，仿佛轻柔的夜风，他的热情只有在攻击时你才能体验。	3	1	baseWuLiAdd:39_39	3.13_3.91	baseHpPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300012	幻火忍杖	item.Equip	bingqi38	三朵火焰环绕杖身，攻击时敌人永远分不出哪是真哪是幻。	3	1	baseWuLiAdd:39_39	3.07_3.85	baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1
+1300013	雨露苦无	item.Equip	bingqi3	丢出的苦无，就像雨露一样铺天盖地。谁能躲过	3	1	baseWuLiAdd:39_39	3.4_4.18	baseWuLiPerAdd:0.05;baseShenFaPerAdd:0.03	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300015	白银乌鸦	item.Equip	bingqi39	攻击时总会从剑身中飞出一只只漆黑的乌鸦，虽柔缺很锋利。	3	1	baseWuLiAdd:39_39	3.11_3.89	baseBaoJiAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300016	离魂之斩	item.Equip	bingQi27	被击中时，不仅肉体会受伤，连灵魂都会颤栗。	3	1	baseWuLiAdd:39_39	3_3.78	baseHpPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1
+1300017	雪龙幽舞	item.Equip	bingQi33	挥动此剑，整个天空会落下漫漫白雪，完全看不清武器攻击路劲。	3	1	baseWuLiAdd:39_39	2.73_3.51	baseHpPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1
+1300018	三池光刀	item.Equip	bingQi27	传说从来没有人看到过第三道光，见过的人都死了。	3	1	baseWuLiAdd:39_39	3.47_4.25	baseNeiLiPerAdd:0.2;baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+1300019	鬼舞之殇	item.Equip	bingQi24	晶莹剔透的水晶剑，可别被他美丽的外表迷惑了。	3	1	baseWuLiAdd:39_39	3.38_4.16	baseShenFaPerAdd:0.03;baseFangYuPerAdd:0.19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1
+2300001	草忍上忍护额	item.Equip	caoshang	一个擅于学习的忍者村，完成A级任务次数达到后，晋升上忍发放的护额。	3	2	baseHpAdd:78_78	7.01_8.57	baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;8	28	-1
+2300002	泷忍上忍护额	item.Equip	longshang	拥有神奇英雄之水的忍村，完成A级任务次数达到后，晋升上忍发放的护额	3	2	baseHpAdd:78_78	5.48_7.04	baseFangYuPerAdd:0.1;baseKangBaoAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;6	28	-1
+2300003	音忍上忍护额	item.Equip	yinshang	使用声音攻击的忍村，完成A级任务次数达到后，晋升上忍发放的护额	3	2	baseHpAdd:78_78	6.43_7.99	baseHpPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1
+2300004	雨忍上忍护额	item.Equip	yunshang	常年下雨，战乱不断，哭泣中的忍村，完成A级任务次数达到后，晋升上忍发放的护额	3	2	baseHpAdd:78_78	5.75_7.31	baseShenFaPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1
+2300005	砂忍上忍护额	item.Equip	shashang	地处交通之要冲，仅次于于木叶的忍村，完成A级任务次数达到后，晋升上忍发放的护额	3	2	baseHpAdd:78_78	6.59_8.15	baseHpPerAdd:0.07;baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1
+2300006	雾忍上忍护额	item.Equip	wushang	漂浮于外海，规模仅次于木叶，擅长使用雾忍术的村子，完成A级任务次数达到后，晋升上忍发放的护额	3	2	baseHpAdd:78_78	5.89_7.45	baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1
+2300007	岩忍上忍护额	item.Equip	yanshang	被天险包围，以坚固的防守著称，村子里的忍者就会毫不畏惧的出击执行各种危险的任务，完成A级任务次数达到后，晋升上忍发放的护额	3	2	baseHpAdd:78_78	5.73_7.29	baseMingZhongAdd:13;baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1
+2300008	云忍上忍护额	item.Equip	yunshang	高耸入云的山峰，回旋着震耳欲聋的雷声，一个军事强国，完成A级任务次数达到后，晋升上忍发放的护额	3	2	baseHpAdd:78_78	6.3_7.86	baseHpPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1
+2300010	雨忍特忍护额	item.Equip	yute	常年下雨，战乱不断，哭泣中的忍村，完成S级任务次数达到后，晋升特别上忍发放的护额	3	2	baseHpAdd:78_78	5.79_7.35	baseShenFaPerAdd:0.14	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1
+2300011	砂忍特忍护额	item.Equip	shate	地处交通之要冲，仅次于于木叶的忍村，完成S级任务次数达到后，晋升特别上忍发放的护额	3	2	baseHpAdd:78_78	5.79_7.35	baseShenFaPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1	
+2300013	岩忍特忍护额	item.Equip	yante	被天险包围，以坚固的防守著称，村子里的忍者就会毫不畏惧的出击执行各种危险的任务，完成S级任务次数达到后，晋升特别上忍发放的护额	3	2	baseHpAdd:78_78	6.59_8.15	baseNeiLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1	
+2300014	云忍特忍护额	item.Equip	yunte	高耸入云的山峰，回旋着震耳欲聋的雷声，一个军事强国，完成S级任务次数达到后，晋升特别上忍发放的护额	3	2	baseHpAdd:78_78	6.2_7.76	baseBaoJiAdd:13;baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1	
+2300015	木叶特忍护额	item.Equip	mute	最为繁荣，连接南北的要道，沃野千里，最强盛的忍村，完成S级任务次数达到后，晋升特别上忍发放的护额	3	2	baseHpAdd:78_78	5.93_7.49	baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;7	28	-1	
+3300001	叛忍风衣	item.Equip	yi18	叛逃自己村子的人所穿戴的衣服，他们的叛忍。	3	3	baseFangYuAdd:39_39	2.86_3.64	baseNeiLiPerAdd:0.1;baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1	
+3300002	追忍风衣	item.Equip	3300002	追杀叛忍所穿戴的衣服，他们的追忍。	3	3	baseFangYuAdd:39_39	2.98_3.76	baseShenFaPerAdd:0.07;baseShanBiAdd:12	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1	
+3300003	医疗风衣	item.Equip	yi20	医疗忍者在治疗同伴时所穿戴的衣服，你懂得。	3	3	baseFangYuAdd:39_39	3.25_4.03	baseShenFaPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1	
+3300006	武士风衣	item.Equip	3300006	铁之国武士所穿的风衣，代表着他们自己有自己的道义。	3	3	baseFangYuAdd:39_39	3_3.78	baseMingZhongAdd:13;baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1	
+3300007	下忍战衣	item.Equip	yi20	忍者学校的忍者所穿戴的衣服。	3	3	baseFangYuAdd:39_39	2.73_3.51	baseHpPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1	
+3300008	下忍战甲	item.Equip	yi20	忍者学校刚毕业的忍者所穿戴的衣服。	3	3	baseFangYuAdd:39_39	3.2_3.98	baseHpPerAdd:0.07;baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1	
+3300010	青春战衣	item.Equip	yi6	迈特凯，李洛克24小时穿戴的衣服，散发着青春的气息，蕴含着青春的力量。	3	3	baseFangYuAdd:39_39	3.38_4.16	baseShanBiAdd:12;baseKangBaoAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1	优先保留
+3300011	藏青忍服	item.Equip	3300011	"以云霓为裳，织成的衣服。一步七摇，犹如摇曳的烛光，闪动的慑人心魄。,"	3	3	baseFangYuAdd:39_39	3.17_3.95	baseWuLiPerAdd:0.12	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1	
+3300012	天诛忍服	item.Equip	yi20	"皮铁结合的战甲，大部分是用上好的皮料制作，辅以小片的铁甲装饰，威猛无比，,"	3	3	baseFangYuAdd:39_39	3.39_4.17	baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1	
+3300013	远古战甲	item.Equip	yi20	"初代火影所穿的战甲,具有极强的防御力。"	3	3	baseFangYuAdd:39_39	2.86_3.64	baseHpPerAdd:0.09	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1	
+3300014	砂之铠甲	item.Equip	yi20	在皮肤外层包裹一层坚硬的砂砾。	3	3	baseFangYuAdd:39_39	3.15_3.93	baseHpPerAdd:0.07;baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	-1	
+3300015	和风竹铠	item.Equip	3300015	"漂亮的铠甲，周身柔软，好似棉布一般，别看这甲柔然，但是防御力可是相当霸道。,"	3	3	baseFangYuAdd:39_39	2.92_3.7	baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1	
+3300016	暗夜风衣	item.Equip	yi20	"鸿雁翎羽编织成衣，高贵华丽，防刀御枪，不可多得的防具。,"	3	3	baseFangYuAdd:39_39	2.9_3.68	baseNeiLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	-1	
+4300001	水之符	item.Equip	4300001	充满了水之力量的符咒。	3	4	baseNeiLiAdd:54_54	4.47_5.55	baseWuLiPerAdd:0.1;baseBaoJiAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300002	白鹤报恩牌	item.Equip	shiping19	上面绘制着白鹤报恩的图样，不知道是哪里流传来的。	3	4	baseNeiLiAdd:54_54	4.5_5.58	baseFangYuPerAdd:0.1;baseShanBiAdd:12	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300003	辟毒珠	item.Equip	shiping20	"翠绿色的珠子，忍界上行走时，一发现有什么不对劲的地方就赶紧将之含在嘴里，可将大多数的毒清除掉。,"	3	4	baseNeiLiAdd:54_54	4.78_5.86	baseBaoJiAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300004	武运圭	item.Equip	shiping21	铁之国所特有的一类人群所佩戴的饰品，犹如武士的功勋标记，炫耀其战功。	3	4	baseNeiLiAdd:54_54	4.47_5.55	baseHuiXinAdd:19	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300005	戒指の空	item.Equip	shiping22	雕着‘空’字的戒指，大蛇丸带的戒指，晓组织身分象征。	3	4	baseNeiLiAdd:54_54	4.22_5.3	baseHpPerAdd:0.07;baseNeiLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300006	戒指の北	item.Equip	shiping23	晓部忍者组织所佩戴的饰品之一，代号北的饰品。	3	4	baseNeiLiAdd:54_54	4.5_5.58	baseWuLiPerAdd:0.1;baseShanBiAdd:12	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300007	戒指の三	item.Equip	shiping24	晓部忍者组织所佩戴的饰品之一，代号三的饰品。	3	4	baseNeiLiAdd:54_54	4.39_5.47	baseHpPerAdd:0.07;baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300008	戒指の玄	item.Equip	shiping25	晓部忍者组织所佩戴的饰品之一，代号玄的饰品。	3	4	baseNeiLiAdd:54_54	4.29_5.37	baseMingZhongAdd:13;baseBaoJiAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300009	戒指の玉	item.Equip	shiping26	晓部忍者组织所佩戴的饰品之一，代号玉的饰品。	3	4	baseNeiLiAdd:54_54	4.18_5.26	baseHpPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300010	戒指の青	item.Equip	shiping27	晓部忍者组织所佩戴的饰品之一，代号青的饰品。	3	4	baseNeiLiAdd:54_54	4.4_5.48	baseShanBiAdd:12;baseKangBaoAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300011	戒指の南	item.Equip	shiping28	晓部忍者组织所佩戴的饰品之一，代号南的饰品。	3	4	baseNeiLiAdd:54_54	4.45_5.53	baseHpPerAdd:0.07;baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300012	戒指の朱	item.Equip	shiping29	晓部忍者组织所佩戴的饰品之一，代号朱的饰品。	3	4	baseNeiLiAdd:54_54	4.36_5.44	baseNeiLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300013	戒指の白	item.Equip	shiping30	晓部忍者组织所佩戴的饰品之一，代号白的饰品。	3	4	baseNeiLiAdd:54_54	4.56_5.64	baseShenFaPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300014	戒指の零	item.Equip	shiping31	晓部忍者组织所佩戴的饰品之一，代号零的饰品。	3	4	baseNeiLiAdd:54_54	4.4_5.48	baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	-1	
+4300017	咒印徽章	item.Equip	4300017	被加了咒印的人可以发挥强大的威力，但同时也会无限量强行引出力量，因此会对用者有强大的侵食。	3	4	baseNeiLiAdd:54_54	3.69_4.94	baseNeiLiPerAdd:0.1	10000;22001	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:121	5	43;3	28	-1	音忍套装
+5300002	残影靴	item.Equip	5300002	叛忍流亡时会穿戴的靴子，据说能加快叛忍逃亡的速度。	3	5	baseShenFaAdd:80_80	5.72_7.32	baseShanBiAdd:12;baseKangBaoAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300003	暗光踏	item.Equip	5300003	暗杀战术特殊部队执行任务所穿戴的靴子，据说能较快获得线索。	3	5	baseShenFaAdd:80_80	6.78_8.38	baseHpPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300004	缉碎履	item.Equip	xie6	追忍专门负责追杀叛忍时所穿戴的靴子，速度也比较快。	3	5	baseShenFaAdd:80_80	6.66_8.26	baseHpPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300005	嗜命鞋	item.Equip	xie6	相传是为了刺杀敌人头目，特制的一种靴子。	3	5	baseShenFaAdd:80_80	6.5_8.1	baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300006	火冥踏	item.Equip	xie6	相传天地万物所融合而成的靴子，落在忍者村某个地方，无人得知。	3	5	baseShenFaAdd:80_80	6.27_7.87	baseShenFaPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300007	血狱	item.Equip	xie6	相传神秘人打造，具体功能尚未有人得知。	3	5	baseShenFaAdd:80_80	5.8_7.4	baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300008	幻影靴	item.Equip	5300008	特别上忍从事打听任务时所穿戴的靴子。	3	5	baseShenFaAdd:80_80	7.19_8.79	baseHpPerAdd:0.07;baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;6	28	-1
+5300009	噬魔踏	item.Equip	5300009	特别上忍从事谍报时所穿戴的靴子。	3	5	baseShenFaAdd:80_80	5.61_7.21	baseNeiLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;4	28	-1
+5300010	灵影靴	item.Equip	5300010	特别上忍从事研发时所穿戴的靴子。	3	5	baseShenFaAdd:80_80	5.97_7.57	baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300011	影一舞杀	item.Equip	5300011	特别上忍从事教育时所穿戴的靴子。	3	5	baseShenFaAdd:80_80	6.12_7.72	baseBaoJiAdd:13;baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300012	光影之泣	item.Equip	xie6	相传是特别上忍此类人所穿戴的靴子，他们是在某些方面具有独特才能及发展的忍者。	3	5	baseShenFaAdd:80_80	5.7_7.3	baseFangYuPerAdd:0.1;baseMingZhongAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300014	魂祭	item.Equip	xie6	忍者村神秘人才拥有的靴子，一般人无从地方获得。	3	5	baseShenFaAdd:80_80	6.8_8.4	baseHpPerAdd:0.07;baseShenFaPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+5300015	魂夺影	item.Equip	xie6	忍者村精英上忍所穿戴的靴子之一，只有在成为上忍时才会穿此靴子。	3	5	baseShenFaAdd:80_80	5.75_7.35	baseNeiLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	-1
+1300009	黑曜苦无	item.Equip	bingQi32	地心黑曜石打造而成的苦无，深受四代信赖。	3	1	baseWuLiAdd:39_39	3.13_3.91	baseBaoJiAdd:13;baseHuiXinAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	1350000001
+2300009	木叶上忍护额	item.Equip	mushang	木叶村忍者完成A级任务次数达到后，晋升上忍时发放的护额	3	2	baseHpAdd:78_78	5.47_7.03	baseShanBiAdd:12	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;6	28	1350000001
+3300009	上忍战衣	item.Equip	yi20	一般上忍穿戴的衣服，防御不错。	3	3	baseFangYuAdd:39_39	3.13_3.91	baseFangYuPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;4	28	1350000001
+4300016	医之坠	item.Equip	shiping3	医疗忍者治疗同伴忍者时经常佩戴的饰品。	3	4	baseNeiLiAdd:54_54	4.69_5.77	baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	1350000001	
+5300016	木叶上忍足具	item.Equip	5300016	木叶上忍的制式足具	3	5	baseShenFaAdd:80_80	5.84_7.44	baseHpPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	1350000001	
+1300002	长太刀	item.Equip	1300002	比小太刀长一些，威力也大一些	3	1	baseWuLiAdd:39_39	2.87_3.65	baseNeiLiPerAdd:0.1;baseKangBaoAdd:26	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	1350000003	
+2400001	暗部面具	item.Equip	hyzb12	作为忍存执法部队，身份保密是必须的。	3	2	baseHpAdd:78_78	8.4_10.74	baseHpPerAdd:0.02;baseKangBaoAdd:17	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	78;10	28	1350000003	保留
+3300004	暗部风衣	item.Equip	yi20	暗杀战斗特殊部队穿戴的衣服，衣服防伤害，一般执行任务时所穿。	3	3	baseFangYuAdd:39_39	2.92_3.7	baseBaoJiAdd:13	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	39;3	28	1350000003	
+4300015	暗之链	item.Equip	shiping32	暗杀战术特部队所拥有的戒指，花样繁多，带有攻击力。	3	4	baseNeiLiAdd:54_54	4.78_5.86	baseHpPerAdd:0.07	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	43;4	28	1350000003	
+5300001	影痕	item.Equip	5300001	暗部执行任务时所穿戴的靴子，比较神秘。	3	5	baseShenFaAdd:80_80	5.72_7.32	baseWuLiPerAdd:0.1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	5	56;5	28	1350000003	
+4300099	忍法之书	item.Equip	jinengcanpian1	记载着A级忍术的卷轴，随身携带可以增加角色的一部分能力	3	4	baseNeiLiAdd:54_54	3.69_4.94	baseWuLiPerAdd:0.1	10000;22001	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:121	5	43;3	28	-1	
+1200001	竹笛吹矢	item.Equip	hyzb44	百年金竹炮制而成，也算是忍者的专用武器了。	2	1	baseWuLiAdd:26_26	2.2_2.72	baseShenFaPerAdd:0.05	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1	
+1200002	绯流琥	item.Equip	hyzb10	绯流琥是被赤砂之蝎杀死的忍者做成的傀儡，赤砂之蝎大多时间藏在这个傀儡中	2	1	baseWuLiAdd:26_26	2.05_2.57	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1	
+1200003	小太刀	item.Equip	bingqi41	不错的小刀，通体流露出一股小正太的味道	2	1	baseWuLiAdd:26_26	2.24_2.76	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;3	14	-1	
+1200005	风魔手里剑	item.Equip	hyzb38	风魔一族使用的手里剑，看起来很威武，但是杀伤力一般	2	1	baseWuLiAdd:26_26	1.96_2.48	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1	
+1200006	木质忍杖	item.Equip	bingqi36	百年檀木精心打磨而成的忍杖，轻而解释，受很多忍者喜欢	2	1	baseWuLiAdd:26_26	2.04_2.56	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1	
+1200007	落叶双剑	item.Equip	bingQi25	乌黑的棒子，布满了像荆棘一样的倒钩。	2	1	baseWuLiAdd:26_26	2.07_2.59	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1	
+1200008	中反刀	item.Equip	bingQi18	像星星样闪烁的光芒在杖首。	2	1	baseWuLiAdd:26_26	2.06_2.58	baseWuLiPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1	
+1200009	胁差刀	item.Equip	bingQi29	"轻灵锋锐，寒光闪烁，黑白双剑以之行走忍界，所向无敌，无可抵挡。,"	2	1	baseWuLiAdd:26_26	1.84_2.36	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1	
+1200010	翡翠青玉杖	item.Equip	bingqi6	"惆怅夜久星繁，碧云望断，玉箫声在何处？萧声一起，闻着肝肠寸断。,"	2	1	baseWuLiAdd:26_26	1.83_2.35	baseNeiLiPerAdd:0.06	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+2200001	泷忍中忍护额	item.Equip	longzhong	拥有神奇英雄之水的忍村，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	3.8_4.84	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;4	14	-1
+2200002	音忍中忍护额	item.Equip	yinzhong	使用声音攻击的忍村，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	4.2_5.24	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;5	14	-1
+2200003	雨忍中忍护额	item.Equip	yunzhong	常年下雨，战乱不断，哭泣中的忍村，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	3.73_4.77	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;4	14	-1
+2200004	砂忍中忍护额	item.Equip	shazhong	地处交通之要冲，仅次于于木叶的忍村，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	3.99_5.03	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;5	14	-1
+2200005	雾忍中忍护额	item.Equip	wuzhong	漂浮于外海，规模仅次于木叶，擅长使用雾忍术的村子，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	4.15_5.19	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;5	14	-1
+2200006	岩忍中忍护额	item.Equip	yanzhong	被天险包围，以坚固的防守著称，村子里的忍者就会毫不畏惧的出击执行各种危险的任务，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	4.66_5.7	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;5	14	-1
+2200007	云忍中忍护额	item.Equip	yunzhong	高耸入云的山峰，回旋着震耳欲聋的雷声，一个军事强国，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	3.75_4.79	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;4	14	-1
+3200001	忍者武甲	item.Equip	yi10	中级忍者所穿戴的衣服，穿此衣服让人感受到力量。	2	3	baseFangYuAdd:26_26	2.06_2.58	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+3200002	斥候斗篷	item.Equip	yi11	斥候部队所穿的衣服，隐匿能力良好	2	3	baseFangYuAdd:26_26	1.86_2.38	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+3200003	爆忍之衣	item.Equip	yi12	爆破忍者所穿的衣服，轻便且可以吸收大量伤害	2	3	baseFangYuAdd:26_26	1.98_2.5	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+3200004	中忍护具	item.Equip	yi13	中级忍者所穿戴的衣服，有一定几率免疫伤害。	2	3	baseFangYuAdd:26_26	1.92_2.44	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+3200005	中忍破甲	item.Equip	yi14	中级忍者所穿戴的衣服，穿此衣服的人也有一定的身份地位。	2	3	baseFangYuAdd:26_26	2.11_2.63	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+3200007	火影斗篷	item.Equip	yi16	"绝世精品,只有至上的忍者才配此穿。"	2	3	baseFangYuAdd:26_26	2.09_2.61	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+3200008	中忍忍服	item.Equip	yi17	中级忍者所穿戴的衣服，有一定几率免疫伤害。	2	3	baseFangYuAdd:26_26	2.2_2.72	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	-1
+4200001	血忍护手	item.Equip	shiping11	特别上忍天生拥有的护手，无利物不摧。	2	4	baseNeiLiAdd:36_36	2.84_3.56	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	29;3	14	-1
+4200002	残戒	item.Equip	shiping12	看似残旧，实则精美。	2	4	baseNeiLiAdd:36_36	2.67_3.39	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	29;2	14	-1	
+4200003	水之戒	item.Equip	shiping13	充满了水属性查克拉的戒指，佩戴可以增加角色能力	2	4	baseNeiLiAdd:36_36	3.14_3.86	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	29;3	14	-1	
+4200004	火之戒	item.Equip	shiping1	充满了火属性查克拉的戒指，佩戴可以增加角色能力	2	4	baseNeiLiAdd:36_36	3.14_3.86	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	29;3	14	-1	
+4200006	雷之戒	item.Equip	shiping15	充满了雷属性查克拉的戒指，佩戴可以增加角色能力	2	4	baseNeiLiAdd:36_36	2.99_3.71	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	29;3	14	-1	
+4200007	风之戒	item.Equip	shiping16	充满了风属性查克拉的戒指，佩戴可以增加角色能力	2	4	baseNeiLiAdd:36_36	2.94_3.66	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	29;3	14	-1	
+4200008	土之戒	item.Equip	shiping17	充满了土属性查克拉的戒指，佩戴可以增加角色能力	2	4	baseNeiLiAdd:36_36	2.69_3.41	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	29;2	14	-1	
+5200001	水影革	item.Equip	xie6	忍者组织晓部所穿，能给穿戴者力量。	2	5	baseShenFaAdd:54_54	4_5.08	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;3	14	-1	
+5200002	雷影之光	item.Equip	xie6	忍者组织晓部所穿，捕获尾兽时所穿戴。	2	5	baseShenFaAdd:54_54	4.54_5.62	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;4	14	-1	
+5200003	中忍短靴	item.Equip	5200003	中忍普遍穿着的鞋子，造价不高，可批量生产	2	5	baseShenFaAdd:54_54	4.5_5.58	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;4	14	-1	
+5200004	木叶便鞋	item.Equip	5200004	忍者普遍穿着的鞋子，舒适又实用	2	5	baseShenFaAdd:54_54	4.37_5.45	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;3	14	-1	
+5200005	中忍木履	item.Equip	5200005	一般中忍的鞋子，并没有什么特别的地方	2	5	baseShenFaAdd:54_54	4.23_5.31	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;3	14	-1	
+5200006	斥候靴	item.Equip	5200006	忍者侦查时穿戴的靴子，很轻便，踩在地上根本看不出来脚印	2	5	baseShenFaAdd:54_54	4.43_5.51	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;3	14	-1	
+5200007	爆忍靴	item.Equip	5200007	负责爆破的忍者穿着的鞋子，除了轻便，别的功能无从得知	2	5	baseShenFaAdd:54_54	3.81_4.89	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;3	14	-1	
+5200008	嗜影靴	item.Equip	xie6	同为暗部所穿，行动诡秘，功能也无从得知。	2	5	baseShenFaAdd:54_54	4.75_5.83	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;4	14	-1	
+1200004	铜质手里剑	item.Equip	bingqi1	紫铜打造，四齿开锋，飞行稳定 杀伤力较大。	2	1	baseWuLiAdd:26_26	1.97_2.49	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	1250000001	新手套装
+2200008	木叶中忍护额	item.Equip	muzhong	最为繁荣，连接南北的要道，沃野千里，最强盛的忍村，通过中忍考试发放的护额	2	2	baseHpAdd:52_52	4.54_5.58	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	52;5	14	1250000001	新手套装
+3200006	中忍战衣	item.Equip	yi15	中级忍者所穿戴的衣服，曾经经历过忍界大战。	2	3	baseFangYuAdd:26_26	2.19_2.71	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	26;2	14	1250000001	新手套装
+4200005	火之符	item.Equip	4200005	充满了火属性查克拉的符咒，为火之国忍者旅行必备。	2	4	baseNeiLiAdd:54_54	3.19_4.25	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	43;3	14	1250000001	木叶中忍套装
+5200009	木叶中忍战靴	item.Equip	xie6	木叶中忍的制式鞋子	2	5	baseShenFaAdd:54_54	3.98_5.06	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	4	38;3	14	1250000001	
+1100000	木制手里剑	item.Equip	bingqi0	木头制作的手里剑，长用于训练。	1	1	baseWuLiAdd:18_18	1.49_1.85	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100001	铁质苦无	item.Equip	bingQi14	平常忍者使用的苦无，很便宜，丢出去不用回收。	1	1	baseWuLiAdd:18_18	1.26_1.62	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;1	7	-1	
+1100002	竹千本	item.Equip	bingQi17	竹制的千本，很便宜，丢出去不用回收。	1	1	baseWuLiAdd:18_18	1.43_1.79	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100003	贪狼爪	item.Equip	bingQi22	狼性狡而贪，贪狼爪的攻击也是出其不意。	1	1	baseWuLiAdd:18_18	1.32_1.68	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100004	劣制起爆符	item.Equip	bingQi15	普通忍者制作的起爆符，杀伤力有限	1	1	baseWuLiAdd:18_18	1.52_1.88	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100005	红莲爪	item.Equip	bingQi21	蕴含着火焰的能力，对敌人造成伤害时，灼伤敌人。	1	1	baseWuLiAdd:18_18	1.56_1.92	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100006	流光剑	item.Equip	bingqi8	整个剑流光溢彩，薄如蝉翼。	1	1	baseWuLiAdd:18_18	1.33_1.69	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100007	断情斩	item.Equip	bingqi7	世上最难斩断的除了水，还有情。	1	1	baseWuLiAdd:18_18	1.5_1.86	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100008	流云剑	item.Equip	bingqi9	"传说是火之国，木叶忍者村的二代火影所用的剑。拥有者无穷的雷之力量，后被叛忍绿青葵,森乃伊达出盗走"	1	1	baseWuLiAdd:18_18	1.6_1.96	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+1100009	鱼骨剑	item.Equip	bingQi18	深海的鱼骨，融以精铁铸造而成。	1	1	baseWuLiAdd:18_18	1.46_1.82	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1	
+2100001	束带	item.Equip	tou14	一般忍者用来束发的带子，是防止在打架头发挡住视线的东西。	1	2	baseHpAdd:38_38	3.26_4.02	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;4	7	-1	
+2100002	云忍下忍护额	item.Equip	yunxia	高耸入云的山峰，回旋着震耳欲聋的雷声，一个军事强国，通过下忍考试发放的护额	1	2	baseHpAdd:38_38	2.84_3.6	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;3	7	-1	
+2100003	草忍下忍护额	item.Equip	caoxia	一个擅于学习的忍者村，通过下忍考试发放的护额。	1	2	baseHpAdd:38_38	3.41_4.17	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;4	7	-1	
+2100004	泷忍下忍护额	item.Equip	longxia	拥有神奇英雄之水的忍村，通过下忍考试发放的护额	1	2	baseHpAdd:38_38	3.13_3.89	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;4	7	-1
+2100005	音忍下忍护额	item.Equip	yinxia	使用声音攻击的忍村，通过下忍考试发放的护额	1	2	baseHpAdd:38_38	3.25_4.01	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;4	7	-1
+2100006	雨忍下忍护额	item.Equip	yunxia	常年下雨，战乱不断，哭泣中的忍村，通过下忍考试发放的护额	1	2	baseHpAdd:38_38	2.77_3.53	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;3	7	-1
+2100007	砂忍下忍护额	item.Equip	shaxia	地处交通之要冲，仅次于于木叶的忍村，通过下忍考试发放的护额	1	2	baseHpAdd:38_38	3.41_4.17	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;4	7	-1
+2100008	雾忍下忍护额	item.Equip	wuxia	漂浮于外海，规模仅次于木叶，擅长使用雾忍术的村子，通过下忍考试发放的护额	1	2	baseHpAdd:38_38	2.69_3.45	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;3	7	-1
+2100009	岩忍下忍护额	item.Equip	yanxia	被天险包围，以坚固的防守著称，村子里的忍者就会毫不畏惧的出击执行各种危险的任务，通过下忍考试发放的护额	1	2	baseHpAdd:38_38	3.35_4.11	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;4	7	-1
+2100010	木叶下忍护额	item.Equip	muxia	最为繁荣，连接南北的要道，沃野千里，最强盛的忍村，通过小学毕业时发放的护额	1	2	baseHpAdd:38_38	3.12_3.88	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	38;4	7	-1
+3100001	下忍麻衣	item.Equip	yi0	普通忍者穿的麻衣，遮蔽之用。	1	3	baseFangYuAdd:18_18	1.45_1.81	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100002	木叶便衣	item.Equip	yi1	木叶村普通少年穿着的衣服，随处都有出售	1	3	baseFangYuAdd:18_18	1.45_1.81	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100003	忍者便衣	item.Equip	yi2	普通忍者穿的衣服，用粗布制成，有一定的工艺	1	3	baseFangYuAdd:18_18	1.57_1.93	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100004	下忍忍服	item.Equip	yi3	普通下忍穿的衣服，执行任务时可以提供保护。	1	3	baseFangYuAdd:18_18	1.36_1.72	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100005	木叶斗篷	item.Equip	yi4	普通忍者穿的斗篷，遮风挡雨是足够了	1	3	baseFangYuAdd:18_18	1.38_1.74	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100006	忍者风衣	item.Equip	yi5	普通忍者穿的风衣，话说已经很拉风了。	1	3	baseFangYuAdd:18_18	1.58_1.94	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100007	忍者羽衣	item.Equip	yi6	普通忍者穿的羽衣，已经非常昂贵了。	1	3	baseFangYuAdd:18_18	1.55_1.91	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100008	忍者战衣	item.Equip	yi7	穿忍者战衣的多是经历过忍界大战的忍者。	1	3	baseFangYuAdd:18_18	1.61_1.97	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100009	忍者宝甲	item.Equip	yi19	中级忍者所穿戴的甲胄，可抵挡刀枪等穿刺。	1	3	baseFangYuAdd:18_18	1.33_1.69	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+3100010	忍者勇甲	item.Equip	hyzb2	中级忍者所穿戴的衣服，可抵挡一定的忍术伤害。	1	3	baseFangYuAdd:18_18	1.57_1.93	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	18;2	7	-1
+4100001	纸蝴蝶	item.Equip	shiping0	白纸折成的蝴蝶形饰物，忍者村很多人佩戴。	1	4	baseNeiLiAdd:24_24	1.82_2.3	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100002	下忍护符	item.Equip	shiping2	普通下忍佩戴的护符，非常普通	1	4	baseNeiLiAdd:24_24	2.08_2.56	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100003	下忍项链	item.Equip	shiping3	普通下忍佩戴的项链，非常普通，随处都有出售	1	4	baseNeiLiAdd:24_24	1.95_2.43	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100004	铜铃铛	item.Equip	shiping4	普通的小铃铛，看起来没有什么特别的	1	4	baseNeiLiAdd:24_24	1.93_2.41	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100005	白色纸花	item.Equip	shiping5	纸折的花朵，祭奠死去的忍者时佩戴	1	4	baseNeiLiAdd:24_24	2.16_2.64	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100006	坠星链	item.Equip	shiping6	守下忍所佩戴，简单的通过C级任务而获得。	1	4	baseNeiLiAdd:24_24	1.71_2.19	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100007	琉璃耳坠	item.Equip	shiping7	下忍所佩戴，简单的通过D级任务而获得。	1	4	baseNeiLiAdd:24_24	2.13_2.61	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100008	霜影	item.Equip	shiping8	透露着阵阵寒气，可以让人视而不见。	1	4	baseNeiLiAdd:24_24	1.75_2.23	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100009	下忍坠	item.Equip	shiping9	忍者村下忍普遍佩戴的坠饰，带有力量之意。	1	4	baseNeiLiAdd:24_24	1.8_2.28	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+4100010	铃铛	item.Equip	shiping10	破旧的铃铛，不知道是哪里来的，相声仍然非常清脆。	1	4	baseNeiLiAdd:24_24	1.89_2.37	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	19;2	7	-1
+5100001	草履	item.Equip	xie0	忍者村普通的草鞋，简单实用。	1	5	baseShenFaAdd:36_36	2.7_3.42	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100002	帆布鞋	item.Equip	xie1	一种由普通忍者制成的简易鞋子，也只有普通忍者穿穿而已。	1	5	baseShenFaAdd:36_36	2.96_3.68	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100003	纤布履	item.Equip	xie2	普通的布鞋，经过加工改造，可行万里路。	1	5	baseShenFaAdd:36_36	3.13_3.85	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100004	硬木履	item.Equip	xie3	普通下忍所穿戴的靴子，除了很硬.没有其他特殊功能。	1	5	baseShenFaAdd:36_36	3.09_3.81	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100005	疾行靴	item.Equip	xie4	普通下忍所穿戴的靴子，如果你以为穿上他可以节省脚力，那你就想错了	1	5	baseShenFaAdd:36_36	2.87_3.59	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100006	破影鞋	item.Equip	xie5	中忍所穿戴靴子，有一定的保护功能。	1	5	baseShenFaAdd:36_36	3.08_3.8	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100007	影者之靴	item.Equip	xie6	中忍所穿戴靴子，有一定的保护功能，制作成本稍微有点贵。	1	5	baseShenFaAdd:36_36	2.76_3.48	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100008	残踏之靴	item.Equip	xie6	忍者组织晓部所穿，经常通缉各国的重犯。	1	5	baseShenFaAdd:36_36	2.71_3.43	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1
+5100009	无风靴	item.Equip	xie6	医疗忍者经常穿戴的靴子，相传有治愈功能。	1	5	baseShenFaAdd:36_36	3.22_3.94	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;3	7	-1
+5100010	风影踏	item.Equip	xie6	相传为铁之国武士所拥有，据说穿戴后可抵挡武器的伤害。	1	5	baseShenFaAdd:36_36	2.87_3.59	-1	10000;22000	金雕逆袭;金雕再袭	策划看的	hpPerAdd:120;hpAdd:120	3	25;2	7	-1

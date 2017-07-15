@@ -15,7 +15,7 @@ public class Test : MonoBehaviour {
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(10, 50, 100, 30), "start"))
+        if (GUI.Button(new Rect(10, 100, 100, 30), "start"))
         {
             ResourceLoader.Instance.CheckTheVersion(() =>
             {

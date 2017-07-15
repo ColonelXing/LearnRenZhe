@@ -1,0 +1,190 @@
+﻿key	value	showType
+#登录提示		
+login.exeFailt	操作失败！	2048
+login.inputError	输入的参数非法	2048
+login.dbError	数据库操作失败	2048
+login.dbconnect	数据库连接错误	2048
+login.userIsnull	帐号不存在或未激活	2048
+login.userIsNotActive	帐号不存在或未激活	2048
+login.userpassError	密码错误	2048
+login.userFreezed	帐号被冻结	2048
+login.userRepeat	帐号正在游戏中	2048
+login.unkownError	登录失败	2048
+login.eratingbusy	服务器忙，请稍后重试	2048
+login.nowPassError	当前密码错误	2048
+login.insertUserError	新用户登录出错	2048
+login.repeatLogin	正在登录，请稍候	2048
+login.tooMany	同时登录的人过多，请稍候	2048
+login.exsitRole	有角色<font color='#8cff8c'>%var1%</font>正在游戏中，请先退出	2048
+login.timeout	链接已经失效，请返回登录页面，重新进入游戏	2048
+#创建角色提示		2048
+create.timeout	登录超时	2048
+create.maxLimit	创建角色数已达上限	2048
+create.repeatCreate	正在创建，请稍候	2048
+create.repeatName	角色名已被占用	2048
+create.createFault	创建角色失败	2048
+create.gateError	网关错误	2048
+create.roleDel	角色被保留	2048
+create.roleNameTooLong	用户昵称过长	2048
+#角色登陆		2048
+role.error	读取人物数据出错	2048
+role.repeat	角色重复登陆	2048
+role.saving	数据正在保存，请稍候登陆	2048
+role.timeout	登录超时	2048
+role.toomanyroles	同时在线的玩家过多	2048
+role.dataError	玩家数据异常	2048
+#系统提示		
+system.unknow	春的点点点！	2048
+system.innerr	[内部错误]%var1%	2048
+system.dbfault	数据中心连接异常	2048
+system.dcFault	从数据中心读取数据失败	2048
+system.timeout	登录超时	2048
+system.getConnectionTimeout	得到连接%var1%超时	2048
+system.getdataTimeout	得到连接%var1%超时	2048
+system.dataError	玩家数据错误	2048
+system.clientError	客户端数据异常	2048
+system.starting	服务器正在启动，请稍候	2048
+system.banName	您昵称中的<font color='#8cff8c'>%var1%</font>，被禁止使用，请尝试其他角色名	2048
+system.banStr	对不起，不能包含特殊字符	2048
+system.onlive	对不起，对方不在线	2048
+system.upVer	%var1%服务器将于%var2%--%var3%时间进行更新维护，请您提前做好下线准备，避免损失。	17
+system.logAwd	从没听说过么？上线就有奖励，快去<font color='#8cff8c'>%var1%</font>处查看详情吧！	17
+system.upLvl	免费快速升级！免费？没错，每周您都可以在<font color='#8cff8c'>%var1%</font>处免费领取到<font color='#8cff8c'>%var2%</font>小时双倍时间经验	17
+system.pla	想拥有来自西域的奇珍异宝么？打开随身商城，使用金币购买就能得到您梦寐以求的稀有道具	17
+system.petIss	传说在遥远的瀛海岛，生活着很多无比强大的动物，但又无比忠诚于能够降服他们的主人	17
+system.hag	暂时要离开，不想下线怎么办？去温泉泡个澡不失为一个好选择！<font color='#8cff8c'>%var1%</font>会告诉你更多的。	17
+system.bceSwn	西游征程，长路漫漫，一个好汉三个帮，结交几个知己相伴是您不错的选择，快和您的好友一起去<font color='#8cff8c'>%var1%</font>处结拜吧。	17
+system.jonscy	帮会，国家将为您的西游之路提供强有力的保护，还犹豫什么，快去<font color='#8cff8c'>%var1%</font>处寻找一个强大的团体一起努力吧	17
+system.mry	月朦胧鸟朦胧，多情的你是否也想和属于你的另一半携手并肩，听风赏月呢？快带上你喜欢的人去找月老吧！	17
+system.exc	活动无限多，副本无限好，请随时查看活动列表以便及时参与活动并获得更多奖励	17
+system.grpTsk	您可以通过师门的任务NPC参与师门任务，获得相应奖励，并能够学习更多技能	17
+system.daYanDga	挑战大雁塔，你有足够的勇气么？100层的挑战，海量经验等着你，快去找<font color='#8cff8c'>%var1%</font>送你去吧。	17
+hero.chenmi0	您未在官网填写身份验证资料，请及时去官网:<a href='%var1%' target='_blank'><u><font color='#8cff8c'>%var1%</font></u></a>填写身份验证资料！并重新登录游戏！以免被纳入未成年人保护系统！	17
+hero.chenmi1	您已经进入防沉迷时间，此时收益减半，请及时去官网:<a href='%var1%' target='_blank'><u><font color='#8cff8c'>%var1%</font></u></a>填写身份验证资料！再重新登录游戏！	17
+hero.chenmi2	您已经进入防沉迷时间，此时收益为0，请及时去官网:<a href='%var1%' target='_blank'><u><font color='#8cff8c'>%var1%</font></u></a>填写身份验证资料！再重新登录游戏！	17
+hero.chenmi3	您已经进入防沉迷时间，此时无法进行正常的游戏活动，请及时去官网:<a href='%var1%' target='_blank'><u><font color='#8cff8c'>%var1%</font></u></a>填写身份验证资料！再重新登录游戏！	17
+hero.chenmi4	您已经进入防沉迷时间，此时无法采集，请及时去官网:<a href='%var1%' target='_blank'><u><font color='#8cff8c'>%var1%</font></u></a>填写身份验证资料！再重新登录游戏！	17
+hero.chenmi5	您已经进入防沉迷时间，此时无法获取掉落物品，请及时去官网:<a href='%var1%' target='_blank'><u><font color='#8cff8c'>%var1%</font></u></a>填写身份验证资料！再重新登录游戏！	17
+hero.loginTip	抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，健康享受生活。	17
+system.DaNaoTianGong	大闹天宫副本里的<font color='#f70909'>%var1%</font>被<font color='#8cff8c'>%var2%</font>打得头破血流，不禁大叫：“别打了别打了！我这里有件宝贝<a href='event:1,%var4%'><u><font color='#8cff8c'>%var3%</font></u></a>，小英雄拿去吧！”	16
+system.LongGongTanBao	龙宫探宝副本里，人头攒动，<font color='#8cff8c'>%var2%</font>一把揪住<font color='#f70909'>%var1%</font>的衣领微笑道：“识时务者为俊杰”，<font color='#f70909'>%var1%</font>面如死灰，颤抖着从怀里掏出了一个<a href='event:1,%var4%'><u><font color='#8cff8c'>%var3%</font></u></a>	16
+system.WuZhuangGuan	<font color='#8cff8c'>%var2%</font>正带领队友在五庄观副本里刻苦修炼，忽然看见躲在一旁的<font color='#f70909'>%var1%</font>，群体推倒之并狂挠脚心，<font color='#f70909'>%var1%</font>笑得涕泪横流，赶紧交出<a href='event:1,%var4%'><u><font color='#8cff8c'>%var3%</font></u></a>告饶逃命	16
+system.tengYun	<font color='#8cff8c'>%var2%</font>在挑战塔副本里苦练技能，不小心击中了埋伏在一旁的<font color='#f70909'>%var1%</font>，<font color='#f70909'>%var1%</font>高举双手投降，并献上了<a href='event:1,%var4%'><u><font color='#8cff8c'>%var3%</font></u></a>	16
+#system.timenpc	探子回报两头神兽（boss）和四个凶兽（boss）分别出现在了黑风山和边境，您可以去己方阵营或者敌对阵营降服它们，会有意想不到的惊喜！	18
+system.atknpc	恭喜<font color='#8cff8c'>%var2%</font>在%var1%获得珍贵宝物<a href='event:1,%var4%'><u><font color='#8cff8c'>%var3%</font></u></a>，大家继续努力哦，宝物不断，惊喜不断。	16
+theBangActiveIsOver	该活动已结束！	16
+world.mulExpStart	开启%var1%倍经验,持续%var2%小时	9
+world.mulExpClose	%var1%倍经验已结束	9
+world.sceneLoadFinish	“太虚幻境”是新手单人指引场景，你是看不到其他玩家的，完成任务进入“凌霄殿”你就会看到更多人	1
+world.timeboss	<font color='#8cff8c'>%var1%</font>BOSS突然出现在<font color='#8cff8c'>%var2%</font>地图，邀各路英雄们抓紧去降妖除魔。	8
+system.gonggao	火影令：%var1%	9
+#常见的不足提示		
+hero.no.enough.money	没有足够的钱	9
+hero.no.enough.gold	金币不足	9
+hero.no.enough.vitality	元气不足	9
+hero.no.enough.energy	体力不足	9
+hero.no.enough.stone	熔炼石不足	9
+hero.has.max.money	金钱已经达上限	9
+hero.gold.over	金币超限	9
+hero.weiwang.over	掌门威望超限！	9
+hero.lunjian.honor.over	竞技次数超限！	9
+hero.jiaohuaji.times.full	已达今日最大使用次数	9
+hero.yuanqidan.times.full	今天使用元气丹次数已达上限！	9
+hero.zhangmentie.times.full	今天使用掌门贴次数已达上限！	9
+hero.chat.enough.item	聊天道具不足，无法发送信息！	9
+hero.sell.need.level	购买此道具需要队长达到%var1%级!	9
+hero.sell.need.vip	购买此道具需要vip达到%var1%级!	9
+hero.soul.over	元神超限！	9
+#获得提示		
+hero.get.gold	恭喜您获得金币%var1%!	9
+hero.get.money	恭喜您获得银两%var1%!	9
+hero.get.popularity	恭喜掌门获得威望%var1%	9
+hero.get.lunjian.exp	恭喜您获得竞技经验%var1%	9
+hero.get.lunjian.shengwang	恭喜您获得竞技声望%var1%	9
+hero.get.energy	使用成功,今日还可使用%var1%次！	9
+hero.get.vitality	恭喜获得%var1%元气！	9
+hero.get.lunjian.honor	恭喜获得%var1%竞技次数！	9
+hero.get.openserver.send	亲还可以领取%var1%天！	9
+hero.get.glory.award	队长，上次攻打晓之总部排名%var1%，在此奖励%var2%金币，%var3%银两！	9
+hero.get.soul	恭喜您获得元神%var1% ！	9
+hero.get.by.gm	GM向您发送：%var1%物品！	9
+#阵法		
+dizi.nonentity	上阵的弟子不存在	9
+dizi.fight.limit	站位已达上限	9
+dizi.fight.fight	这个弟子已经站在这个位置了	9
+hero.zhenfalist.no.zhenfa	阵法不存在	9
+zhenfa.has.maxlevel	此阵法已经到最高等级	9
+zhenfa.fuzu.not.have	辅助阵法不存在	9
+zhenfa.alread.shangzhen	此阵法已经上阵	9
+zhenfa.up.no.fuzu	没有选辅助升级阵法	9
+glory.award	恭喜队长，上次攻打晓之总部排名%var1%，在此奖励%var2%金币，%var3%银两！	9
+bubai.award	恭喜队长，完成不败神话，获得%var1%元神，%var2%声望！	
+#技能		
+hero.skilllist.no.skill	没有此技能	9
+dizi.alread.skill	已经装备此技能，不能再次装备	9
+dizi.not.enough.zhenqi	真气不够	9
+dizi.not.unload.skill	没有要卸载的技能	9
+skill.has.maxlevel	技能已经达到最高等级	9
+skill.fuzu.not.have	辅助技能不存在	9
+skill.alread.equip	此技能已经装备无法出售	9
+skill.up.no.fuzu	您没有选择辅助技能	9
+#装备		
+hero.equiplist.no.equip	没有此装备	9
+dizi.alread.equip	已经装备此装备，不能再次装备	9
+dizi.not.unload.equip	没有要卸载的装备	9
+equip.have.equip	此装备已经装备无法出售	9
+equip.has.maxlevel	此装备已经达到最大等级	9
+#行囊		
+hero.bag.no.goods	没有此道具	9
+good.not.use	道具不能使用	9
+good.not.key	%var1%不足	9
+good.not.box	没有%var1%来开启	9
+#商城和礼包		
+shop.item.null	购买的商品为空	9
+shop.item.bought	已购买	9
+#vip信息		
+vip.level.less	vip等级不足	9
+vip.giftbox.bought	已经购买	9
+shop.charge.close	充值没有开放	9
+#竞技		
+lunjian.times.over	竞技次数已满！	9
+lunjian.already.award	今天已经领取过竞技奖励！	9
+lunjian.fight.info.null	该玩家暂无战报信息	9
+lunjian.not.join	抱歉，您还没有参与过竞技！	9
+lunjian.award.ok	奖励领取成功！	9
+lunjian.not.statisfy	抱歉，您还未达到领奖条件！	9
+lunjian.zhengba.no.award	暂无此项奖励!	9
+lunjian.zhengba.no.config	没有配置项!	9
+lunjian.zhengba.index.low	您的排名不足以领取次奖励!	9
+lunjian.zhengba.level.low	您的竞技等级不足以领取此奖励!	9
+lunjian.zhengba.no.last	该奖项已领取完毕！	9
+lunjian.not.attack.self	不能挑战自己！	9
+#关卡		
+guanqia.buy.times.full	购买次数已满	9
+#勇闯		
+hero.no.chuangguan.num	闯关的次数已超过3次	9
+hero.select.att.indexislimit	选的属性索引超出限制	9
+#奇遇		
+expfuben.id.no.exist	进入经验副本id不存在	9
+expfuben.times.over	今日进入经验副本的次数已用完	9
+qiyu.qiandao.gold	恭喜您获得%var1%金币。	9
+#传功		
+chuangong.no.dizi	传功弟子不存在。	9
+chuangong.dizi.in.fight	弟子已出战，不能散功。	9
+chuangong.dizi.level.less	散功弟子等级不足。	9
+#首徒		
+youhave.first.dizi	亲已经选择了首徒	9
+#招贤		
+zhaoxian.getlist.fail	获取招贤列表失败	9
+zhaoxian.sendindex.error	传入物品序号错误	9
+zhaoxian.no.enough.good	一级物品不足	9
+zhaoxian.getrates.fail	服务器获取相对概率表失败	9
+zhaoxian.gethuopo.fail	招贤获得魂魄失败	9
+zhaoxian.freshgoods.fail	刷新招贤物品失败	9
+zhaoxian.activity.fail	招贤活动未开启	9
+#掠夺		
+lueduo.no.cards	没有牌子可以翻	9
+lueduo.add.good.fail	添加道具异常	9
+lueduo.index.error	掠夺翻牌子传入序号异常	9
+#充值活动
+recharge.activity.award	恭喜队长获得本轮充值活动排行礼包！	9

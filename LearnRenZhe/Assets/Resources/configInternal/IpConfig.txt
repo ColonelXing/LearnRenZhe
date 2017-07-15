@@ -1,0 +1,3 @@
+﻿登陆服务器的IP	登陆的端口	下载没用配置的ip	下载没用配置的目录	端口下载配置的端口
+dengluIp	dengluoport	meiyongIp	meiyongMulu	port
+192.168.1.136	8001	192.168.1.139	game	8080

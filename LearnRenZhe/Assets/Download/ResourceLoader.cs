@@ -46,7 +46,7 @@ public class ResourceLoader : MonoBehaviour
 
     private SecurityQueue<SaveDataInfo> SaveQueue = new SecurityQueue<SaveDataInfo>();
     private SecurityQueue<WWWreqestInfo> DownloadQueue = new SecurityQueue<WWWreqestInfo>();
-    private SecurityDictionary<WWW, WWWreqestInfo> DownloadDictionary = new SecurityDictionary<WWW, WWWreqestInfo>();
+   // private SecurityDictionary<WWW, WWWreqestInfo> DownloadDictionary = new SecurityDictionary<WWW, WWWreqestInfo>();
     public class SaveDataInfo
     {
         public string rawName;
@@ -92,7 +92,7 @@ public class ResourceLoader : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 20, 200, 30), loadingStr);
+        GUI.Label(new Rect(10, 20, 300, 30), loadingStr);
     }
 
     private Action callback = null;
@@ -130,7 +130,7 @@ public class ResourceLoader : MonoBehaviour
                 Debug.LogError("下载下来的字符串是>>>"+resoures);
                 string[] resouresLines = resoures.Split('\n');
              //   Debug_our.LogError("Ò»¹²ÓÐ×ÊÔŽµÄÊýÁ¿"+resouresLines.Length);
-                for (int i = 0; i < resouresLines.Length; i++)
+                for (int i = 0; i < 3; i++)
                 {
                     string[] resouresOne = resouresLines[i].Split('\t');
   //                  Debug.LogError(resouresOne[1]);
@@ -169,7 +169,7 @@ public class ResourceLoader : MonoBehaviour
 
         if (DownloadQueue.Count > 0)
         {
-            Debug.Log("DownloadQueue.Count > 0");
+            Debug.Log("DownloadQueue.Count="+DownloadQueue.Count);
             Debug.LogError("总共需要"+DownloadQueue.Count+"下载");
             theResourceIsOK = false;
 //            Debug_our.LogError(" ÏÂÔØ¶ÓÁÐÖÐÓÐÇëÇó");
@@ -183,7 +183,7 @@ public class ResourceLoader : MonoBehaviour
 
         if (SaveQueue.Count > 0)
         {
-            Debug.Log("SaveQueue.Count > 0");
+            Debug.Log("SaveQueue.Count ="+SaveQueue.Count);
             SaveDataInfo si = null;
             SaveQueue.Dequeue(ref si);
             StartCoroutine(SavedataToFile(si.guid, si.datas, si.rawName));
@@ -196,15 +196,14 @@ public class ResourceLoader : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         Debug.LogError("添加到wwwPool里面"+wwwRequestInfo.rawName);
-
-        WwwWorkpool.instance.addwork(wwwRequestInfo.url+GetTheSuffixOfURL(), (data) =>
+        WwwWorkpool.instance.addwork(wwwRequestInfo.url+"$@"+GetTheSuffixOfURL(), (data) =>
             {
+                Debug.Log("下载完毕" + wwwRequestInfo.url);
                 SaveDataInfo saveDataInfo = new SaveDataInfo(wwwRequestInfo.rawName, allResources[wwwRequestInfo.rawName].Guid, data);
-
                 SaveQueue.Enqueue(saveDataInfo);
             });
-
     }
+
     public string GetTheLocalPathName()
     {
         string PathURL = "";
@@ -401,8 +400,8 @@ public class ResourceLoader : MonoBehaviour
     }
     private IEnumerator SavedataToFile(string fileName, byte[] datas, string _rawName)
     {
+        Debug.LogError("SavedataToFile=" +fileName+"|"+_rawName);
         string pathURL = GetTheLocalPathName();
-        //Debug_our.LogError("Òª±£ŽæµÄÄ¿ÂŒÊÇ+"+pathURL + fileName);
         if (File.Exists(pathURL + fileName))
         {
             //  Debug_our.LogError("ŽæÔÚ×ÊÔŽÎÄŒþ" + pathURL + fileName+"ÉŸ³ý£¡£¡");
@@ -417,7 +416,7 @@ public class ResourceLoader : MonoBehaviour
         //Debug_our.LogError("×Ü¹²ÒªÏÂÔØµÄbyte£º"+TotalBytesLength);
         CurrentBytesLength += allResources[_rawName].length;
         currentNumberDowdlod++;
-       // Debug_our.LogError(_rawName+"保存完毕");
+        Debug.LogError("SavedataToFile="+fileName + "|" + _rawName + "保存完毕");
         loadingStr = ((float)CurrentBytesLength / (float)TotalBytesLength).ToString() + currentNumberDowdlod + "/" + totalNumberNeedDowload + "个 " + (int)(CurrentBytesLength) + "/" + (TotalBytesLength) + "B";
         checkALLresoure();
         yield break;

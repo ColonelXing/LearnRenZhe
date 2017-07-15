@@ -30,31 +30,21 @@ public class WwwWorkpool : MonoBehaviour
 
     public class WwwWorkItem
     {
-
         public enum EnumWwwStatus
         {
             ready,
-
             working,
-
         }
 
         public WwwWorkItem(string url)
         {
             this.url = url;
-           // this.successCallBack = successCallBack;
         }
 
-      //  public System.Action<byte[]> successCallBack;
-
         public string url = "";
-
         public WWW www = null;
-
         public EnumWwwStatus wwwStatus = EnumWwwStatus.ready;
-
         private byte[] privateResource = null;
-
         public byte[] Resource
         {
            private set { this.privateResource = value; }
@@ -64,10 +54,9 @@ public class WwwWorkpool : MonoBehaviour
         public void MystartDownload(string url)
         {
             this.url = url;
-
-           WwwWorkpool.instance.startDowload(Download);
-         
+           WwwWorkpool.instance.startDowload(Download);   
         }
+
         private IEnumerator Download()
         {
             if (this.wwwStatus == EnumWwwStatus.working)
@@ -82,35 +71,22 @@ public class WwwWorkpool : MonoBehaviour
             this.wwwStatus=EnumWwwStatus.working;
 
             Debug.LogError("开始下载》》》"+this.url);
-
             www=new WWW(this.url);
-
             yield return www;
 
             if (www.isDone && www.error == null)
             {
-                //if (this.successCallBack != null)
-                //{
-                //    this.successCallBack(www.bytes);
-                //}
                 Debug.LogError("现在完》》》》》" + this.url);
                 this.Resource = www.bytes;
-
                 WwwWorkpool.instance.notify(this,EnumMessageType.DownSuccess);
-
                 Dispose();
-
                 this.wwwStatus=EnumWwwStatus.ready;
-
             }
             else if (www.isDone && www.error != null)
             {
                Debug.LogError("现在过程中出现错误》》》》》" + this.url);
-
                WwwWorkpool.instance.notify(this,EnumMessageType.HasError);
-
                 Dispose();
-
                 this.wwwStatus = EnumWwwStatus.ready;
             }
            WwwWorkpool.instance.checkTheQueueAndWork();
@@ -125,7 +101,6 @@ public class WwwWorkpool : MonoBehaviour
                 www = null;
             }
         }
-
     }
 
     public enum EnumMessageType
@@ -135,7 +110,6 @@ public class WwwWorkpool : MonoBehaviour
     }
     private void notify(WwwWorkItem wwwWorkItem,EnumMessageType message)
     {
-       
             switch (message)
             {
                 case EnumMessageType.DownSuccess:
@@ -161,10 +135,7 @@ public class WwwWorkpool : MonoBehaviour
                         }
                     }
                     break;
-                    
-            }
-            
-       
+            }     
     }
 
     private  class  workTarget
@@ -184,14 +155,10 @@ public class WwwWorkpool : MonoBehaviour
         
         
     private Dictionary<WwwWorkItem,workTarget> links=new Dictionary<WwwWorkItem, workTarget>();
-
     private  List<WwwWorkItem> workItems  =new List<WwwWorkItem>(3);
-
     public void addwork(string url,System.Action<byte[]> sccucessCallback)
     {
-
         targets.AddFirst(new workTarget(url,sccucessCallback));
-
         checkTheQueueAndWork();
     }
 
@@ -199,44 +166,33 @@ public class WwwWorkpool : MonoBehaviour
     {
         if (targets.Count <= 0)
         {
-           // Debug_our.LogError("队列中 已经没有要下载的啦");
+            Debug.LogError("队列中 已经没有要下载的啦");
             return;
         }
         else
         {
-           // workTarget workTarget = targets.Last();
-
             foreach (var wwwWorkItem in workItems)
             {
                 if (wwwWorkItem.wwwStatus == WwwWorkItem.EnumWwwStatus.ready)
                 {
-                   //Debug_our.LogError("我发现有》》》》空闲《《《《《www 单位，");
+                   Debug.LogError("我发现有》》》》空闲《《《《《www 单位，");
                     if (targets.Count > 0)
                     {
                         workTarget target = targets.Last();
-
                         targets.RemoveLast();
-
                         if (links.ContainsKey(wwwWorkItem))
                         {
                             links.Remove(wwwWorkItem);
                         }
                         links.Add(wwwWorkItem, target);
-
                         wwwWorkItem.MystartDownload(target.url);
                     }
-                   
                 }
                 else
                 {
                     break;
                 }
             }
-            
         }
-       
-
-
     }
-
 }

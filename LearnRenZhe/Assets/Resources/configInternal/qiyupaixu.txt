@@ -1,0 +1,13 @@
+﻿编号	活动ID	活动名（策划看的）	开启时权重	未开启时权重
+id	activeId	name	realWeight	normalWeight
+1	qy_food	一乐拉面	5500	4000
+2	qy_signUp	每日签到	5400	3900
+3	qy_teacher	高人指点	5300	3800
+4	qy_upLevel	升级奖励	5200	3700
+5	qy_protect	保护纲手	5100	3600
+6	qy_bloodWar	晓の总部	5000	3500
+7	qy_zhaoxian	招贤榜	4900	3400
+8	qy_chongzhi	充值好礼	5600	4100
+9	qy_dashe	大蛇巢穴	4800	3300
+10	qy_bubai	不败神话	4700	3200
+11	qy_choujiang	祈福	5550	3950
